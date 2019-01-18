@@ -1,0 +1,27 @@
+{
+  "Login": {
+    "loginType": "password"
+  },
+  "baseaddess": {
+    "simpleapiurl": "http://100.80.128.88:8080",
+    "fileurl": "http://100.80.128.88:8080",
+    "domain": "qtalk.test.org",
+    "javaurl": "http://100.80.128.88:8080/package",
+    "protobufPcPort": 5202,
+    "xmpp": "100.80.128.88",
+    "xmppport": 5222,
+    "protobufPort": 5202,
+    "pubkey": "rsa_public_key",
+    "xmppmport": 5222,
+    "httpurl": "http://100.80.128.88:8080/newapi",
+    "apiurl": "http://100.80.128.88:8080/api"
+  },
+  "imConfig": {
+    "RsaEncodeType": 1,
+    "showOrganizational": true
+  },
+  "ability": {
+    "searchurl": "http://100.80.128.88:8080/search/search.py"
+  },
+  "version": 10005
+}

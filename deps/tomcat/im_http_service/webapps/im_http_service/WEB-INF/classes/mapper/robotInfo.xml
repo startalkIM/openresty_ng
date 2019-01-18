@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qunar.qchat.dao.IRobotInfoDao">
+
+    <resultMap id="RobotInfoResultMap" type="com.qunar.qchat.dao.model.RobotInfoModel">
+        <result property="enName" column="en_name"></result>
+        <result property="cnName" column="cn_name"></result>
+        <result property="requestUrl" column="request_url"></result>
+        <result property="rbtDesc" column="rbt_desc"></result>
+        <result property="rbtBody" column="rbt_body"></result>
+        <result property="rbtVersion" column="rbt_version"></result>
+        <result property="password" column="password"></result>
+        <result property="recommend" column="recommend"></result>
+    </resultMap>
+
+    <select id="selectRobotInfoByEnName" resultMap="RobotInfoResultMap">
+        select
+          en_name,request_url,rbt_body,rbt_version
+        from robot_info
+        where en_name = #{robotName}
+    </select>
+
+    <select id="selectRobotInfoByEnNames" parameterType="list" resultMap="RobotInfoResultMap">
+        select
+          en_name,request_url,rbt_body,rbt_version
+        from robot_info
+        where en_name in
+        <foreach collection="names" item="name" open="(" close=")" separator=",">
+            #{name}
+        </foreach>
+    </select>
+
+    <select id="selectRobotInfoByType" resultMap="RobotInfoResultMap">
+        select
+           en_name,rbt_body,rbt_version
+        from robot_info where recommend = #{type}
+    </select>
+
+    <select id="selectRobotCountByEnName" resultType="integer">
+        select count(*) from robot_info where en_name = #{enName}
+    </select>
+
+    <select id="selectRobotInfoByKeyword" resultMap="RobotInfoResultMap">
+        select
+          en_name,rbt_body,rbt_version
+        from robot_info
+        where en_name like '%${keyword}%'
+          or  cn_name like '%${keyword}%'
+    </select>
+
+    <insert id="insertRobotInfo" parameterType="com.qunar.qchat.dao.model.RobotInfoModel">
+        insert into robot_info (en_name,cn_name,request_url,rbt_desc,rbt_body,rbt_version,password)
+        values (
+          #{enName}, #{cnName}, #{requestUrl}, #{rbtDesc}, #{rbtBody}, #{rbtVersion}, #{password}
+        )
+    </insert>
+
+    <select id="selectRobotInfoByEnnameAndVersion" resultMap="RobotInfoResultMap">
+        select en_name,request_url,rbt_body,rbt_version from  robot_info
+        where en_name = #{enName} and rbt_version = #{version}
+    </select>
+
+</mapper>

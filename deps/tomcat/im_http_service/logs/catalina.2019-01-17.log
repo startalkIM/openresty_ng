@@ -1,0 +1,150 @@
+17-Jan-2019 05:16:55.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.37
+17-Jan-2019 05:16:55.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 12 2018 12:07:02 UTC
+17-Jan-2019 05:16:55.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.37.0
+17-Jan-2019 05:16:55.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+17-Jan-2019 05:16:55.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.10.0-693.el7.x86_64
+17-Jan-2019 05:16:55.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Jan-2019 05:16:55.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre
+17-Jan-2019 05:16:55.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+17-Jan-2019 05:16:55.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Jan-2019 05:16:55.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /startalk/tomcat/im_http_service
+17-Jan-2019 05:16:55.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /startalk/tomcat/im_http_service
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/startalk/tomcat/im_http_service/conf/logging.properties
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/startalk/tomcat/im_http_service
+17-Jan-2019 05:16:55.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/startalk/tomcat/im_http_service
+17-Jan-2019 05:16:55.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/startalk/tomcat/im_http_service/temp
+17-Jan-2019 05:16:55.475 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+17-Jan-2019 05:16:55.567 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 05:16:55.579 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 05:16:55.594 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 05:16:55.596 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 05:16:55.597 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 542 ms
+17-Jan-2019 05:16:55.621 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Jan-2019 05:16:55.621 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.37
+17-Jan-2019 05:16:55.632 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/ROOT]
+17-Jan-2019 05:19:42.538 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [166,570] milliseconds.
+17-Jan-2019 05:19:42.568 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/ROOT] has finished in [166,936] ms
+17-Jan-2019 05:19:42.568 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/docs]
+17-Jan-2019 05:19:42.591 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/docs] has finished in [23] ms
+17-Jan-2019 05:19:42.592 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/examples]
+17-Jan-2019 05:19:42.850 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/examples] has finished in [258] ms
+17-Jan-2019 05:19:42.851 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/host-manager]
+17-Jan-2019 05:19:42.874 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/host-manager] has finished in [23] ms
+17-Jan-2019 05:19:42.875 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/manager]
+17-Jan-2019 05:19:42.896 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/manager] has finished in [21] ms
+17-Jan-2019 05:19:42.896 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service]
+17-Jan-2019 05:19:44.889 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Jan-2019 05:19:47.714 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service] has finished in [4,818] ms
+17-Jan-2019 05:19:47.718 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 05:19:47.730 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 05:19:47.731 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 172134 ms
+17-Jan-2019 06:26:58.101 INFO [Thread-7] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:26:58.124 INFO [Thread-7] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:26:58.131 INFO [Thread-7] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Jan-2019 06:26:58.220 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [im_http_service] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+17-Jan-2019 06:26:58.253 INFO [Thread-7] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:26:58.255 INFO [Thread-7] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:26:58.257 INFO [Thread-7] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:26:58.258 INFO [Thread-7] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:38:55.918 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.37
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 12 2018 12:07:02 UTC
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.37.0
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.10.0-957.1.3.el7.x86_64
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /startalk/tomcat/im_http_service
+17-Jan-2019 06:38:55.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /startalk/tomcat/im_http_service
+17-Jan-2019 06:38:55.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/startalk/tomcat/im_http_service/conf/logging.properties
+17-Jan-2019 06:38:55.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Jan-2019 06:38:55.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Jan-2019 06:38:55.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/startalk/tomcat/im_http_service
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/startalk/tomcat/im_http_service
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/startalk/tomcat/im_http_service/temp
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+17-Jan-2019 06:38:56.060 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:38:56.080 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 06:38:56.098 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:38:56.100 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 06:38:56.100 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 656 ms
+17-Jan-2019 06:38:56.130 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Jan-2019 06:38:56.130 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.37
+17-Jan-2019 06:38:56.143 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/ROOT]
+17-Jan-2019 06:38:56.520 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/ROOT] has finished in [376] ms
+17-Jan-2019 06:38:56.520 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/docs]
+17-Jan-2019 06:38:56.537 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/docs] has finished in [17] ms
+17-Jan-2019 06:38:56.537 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/examples]
+17-Jan-2019 06:38:56.828 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/examples] has finished in [291] ms
+17-Jan-2019 06:38:56.829 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/host-manager]
+17-Jan-2019 06:38:56.858 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/host-manager] has finished in [30] ms
+17-Jan-2019 06:38:56.858 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/manager]
+17-Jan-2019 06:38:56.882 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/manager] has finished in [24] ms
+17-Jan-2019 06:38:56.882 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service]
+17-Jan-2019 06:38:59.050 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Jan-2019 06:39:01.818 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service] has finished in [4,936] ms
+17-Jan-2019 06:39:01.821 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:39:01.832 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:39:01.847 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 5746 ms
+17-Jan-2019 06:51:52.045 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Jan-2019 06:51:52.045 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:51:52.052 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:51:52.058 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Jan-2019 06:51:52.082 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [im_http_service] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+17-Jan-2019 06:51:52.097 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:51:52.099 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:51:52.101 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:51:52.102 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:52:10.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.37
+17-Jan-2019 06:52:10.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 12 2018 12:07:02 UTC
+17-Jan-2019 06:52:10.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.37.0
+17-Jan-2019 06:52:10.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.10.0-957.1.3.el7.x86_64
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /startalk/tomcat/im_http_service
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /startalk/tomcat/im_http_service
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/startalk/tomcat/im_http_service/conf/logging.properties
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Jan-2019 06:52:10.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/startalk/tomcat/im_http_service
+17-Jan-2019 06:52:10.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/startalk/tomcat/im_http_service
+17-Jan-2019 06:52:10.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/startalk/tomcat/im_http_service/temp
+17-Jan-2019 06:52:10.141 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+17-Jan-2019 06:52:10.250 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:52:10.265 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 06:52:10.281 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:52:10.283 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 06:52:10.283 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 568 ms
+17-Jan-2019 06:52:10.311 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Jan-2019 06:52:10.311 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.37
+17-Jan-2019 06:52:10.322 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/ROOT]
+17-Jan-2019 06:52:10.693 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/ROOT] has finished in [371] ms
+17-Jan-2019 06:52:10.693 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/docs]
+17-Jan-2019 06:52:10.712 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/docs] has finished in [19] ms
+17-Jan-2019 06:52:10.713 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/examples]
+17-Jan-2019 06:52:10.987 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/examples] has finished in [274] ms
+17-Jan-2019 06:52:10.987 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/host-manager]
+17-Jan-2019 06:52:11.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/host-manager] has finished in [28] ms
+17-Jan-2019 06:52:11.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/manager]
+17-Jan-2019 06:52:11.038 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/manager] has finished in [22] ms
+17-Jan-2019 06:52:11.038 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service]
+17-Jan-2019 06:52:13.268 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Jan-2019 06:52:16.343 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service] has finished in [5,305] ms
+17-Jan-2019 06:52:16.346 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:52:16.357 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:52:16.368 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 6084 ms

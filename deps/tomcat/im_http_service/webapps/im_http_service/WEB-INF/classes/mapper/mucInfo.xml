@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qunar.qchat.dao.IMucInfoDao">
+
+    <resultMap id="mucIncrementInfoResultMap" type="com.qunar.qchat.dao.model.MucInfoModel">
+        <result property="mucName" column="muc_name"></result>
+        <result property="showName" column="show_name"></result>
+        <result property="mucDesc" column="muc_desc"></result>
+        <result property="mucTitle" column="muc_title"></result>
+        <result property="mucPic" column="muc_pic"></result>
+        <result property="version" column="version"></result>
+    </resultMap>
+
+    <sql id="column_all">
+        muc_name, show_name, muc_desc, muc_title, muc_pic, version
+    </sql>
+
+    <select id="selectMucIncrementInfo" resultType="com.qunar.qchat.dao.model.MucIncrementInfo">
+        select muc_name,domain,(extract(epoch from date_trunc('MS', created_at))*1000 - 8*3600*1000) as t,registed_flag
+        from user_register_mucs where created_at > to_timestamp(#{t}) and username = #{u} and host = #{d};
+    </select>
+
+    <select id="updateMucInfo" parameterType="com.qunar.qchat.dao.model.MucInfoModel" resultMap="mucIncrementInfoResultMap">
+       update muc_vcard_info
+         <set>
+            <if test="showName != null and showName != ''"> show_name = #{showName}, </if>
+            <if test="mucDesc != null and mucDesc != ''"> muc_desc = #{mucDesc}, </if>
+            <if test="mucTitle != null and mucTitle != ''"> muc_title = #{mucTitle}, </if>
+            <if test="mucPic != null and mucPi != ''"> muc_pic = #{mucPic}, </if>
+            version = cast(muc_vcard_info.version as integer)+ 1
+         </set>
+         where muc_name = #{mucName}
+
+         returning muc_name,show_name,muc_desc,muc_title,muc_pic,version
+    </select>
+
+
+    <select id="selectMucInfoByIds" resultMap="mucIncrementInfoResultMap">
+        select <include refid="column_all"/> from muc_vcard_info where muc_name in
+          <foreach collection="ids" separator="," item="id" open="(" close=")">#{id}</foreach>
+
+    </select>
+
+</mapper>

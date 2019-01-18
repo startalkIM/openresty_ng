@@ -1,0 +1,877 @@
+17-Jan-2019 05:16:55.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.37
+17-Jan-2019 05:16:55.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 12 2018 12:07:02 UTC
+17-Jan-2019 05:16:55.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.37.0
+17-Jan-2019 05:16:55.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+17-Jan-2019 05:16:55.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.10.0-693.el7.x86_64
+17-Jan-2019 05:16:55.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Jan-2019 05:16:55.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre
+17-Jan-2019 05:16:55.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+17-Jan-2019 05:16:55.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Jan-2019 05:16:55.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /startalk/tomcat/im_http_service
+17-Jan-2019 05:16:55.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /startalk/tomcat/im_http_service
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/startalk/tomcat/im_http_service/conf/logging.properties
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Jan-2019 05:16:55.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/startalk/tomcat/im_http_service
+17-Jan-2019 05:16:55.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/startalk/tomcat/im_http_service
+17-Jan-2019 05:16:55.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/startalk/tomcat/im_http_service/temp
+17-Jan-2019 05:16:55.475 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+17-Jan-2019 05:16:55.567 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 05:16:55.579 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 05:16:55.594 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 05:16:55.596 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 05:16:55.597 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 542 ms
+17-Jan-2019 05:16:55.621 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Jan-2019 05:16:55.621 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.37
+17-Jan-2019 05:16:55.632 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/ROOT]
+17-Jan-2019 05:19:42.538 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [166,570] milliseconds.
+17-Jan-2019 05:19:42.568 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/ROOT] has finished in [166,936] ms
+17-Jan-2019 05:19:42.568 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/docs]
+17-Jan-2019 05:19:42.591 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/docs] has finished in [23] ms
+17-Jan-2019 05:19:42.592 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/examples]
+17-Jan-2019 05:19:42.850 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/examples] has finished in [258] ms
+17-Jan-2019 05:19:42.851 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/host-manager]
+17-Jan-2019 05:19:42.874 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/host-manager] has finished in [23] ms
+17-Jan-2019 05:19:42.875 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/manager]
+17-Jan-2019 05:19:42.896 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/manager] has finished in [21] ms
+17-Jan-2019 05:19:42.896 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service]
+17-Jan-2019 05:19:44.889 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-01-17 05:19:45,117 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2019-01-17 05:19:45,187 [localhost-startStop-1] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jan 17 05:19:45 EST 2019]; root of context hierarchy
+2019-01-17 05:19:45,221 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-17 05:19:45,419 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-placeholder.xml]
+2019-01-17 05:19:45,446 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-datasource.xml]
+2019-01-17 05:19:45,493 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-redis.xml]
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+2019-01-17 05:19:46,588 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1447 ms
+2019-01-17 05:19:46,616 [localhost-startStop-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-17 05:19:46,618 [localhost-startStop-1] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 05:19:46 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 05:19:46,619 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring_servlet.xml]
+2019-01-17 05:19:46,710 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-others.xml]
+2019-01-17 05:19:47,305 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/base/get_invite_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QBaseController.getInviteInfo(com.qunar.qchat.model.request.GetInviteInfoRequest)
+2019-01-17 05:19:47,307 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/base/qtalk/get_deps.qunar],methods=[GET]}" onto public java.lang.Object com.qunar.qchat.controller.QBaseController.getDeps(com.qunar.qchat.model.request.GetDepsRequest,javax.servlet.http.HttpServletRequest)
+2019-01-17 05:19:47,308 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/base/getservertime.qunar],methods=[GET]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QBaseController.getServerTime(javax.servlet.http.HttpServletRequest)
+2019-01-17 05:19:47,310 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/config/check_config.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QCheckConfigController.checkConfig(com.qunar.qchat.model.request.CheckConfigRequest)
+2019-01-17 05:19:47,311 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/config/t],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QCheckConfigController.checkConfigIOS(com.qunar.qchat.model.request.CheckConfigRequest)
+2019-01-17 05:19:47,313 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/configuration/getincreclientconfig.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QClientConfigController.getIncreClientConfig(com.qunar.qchat.model.request.IncreClientConfigRequst)
+2019-01-17 05:19:47,314 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/configuration/setclientconfig.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QClientConfigController.setClientConfig(com.qunar.qchat.model.request.SetClientConfigRequst)
+2019-01-17 05:19:47,316 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/domain/get_user_status.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QDomainController.getUserStatus(com.qunar.qchat.model.request.GetUserStatusRequest)
+2019-01-17 05:19:47,317 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/domain/get_vcard_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QDomainController.getVCardInfo(java.util.List<com.qunar.qchat.model.request.GetVCardInfoRequest>)
+2019-01-17 05:19:47,318 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/domain/search_vcard.qunar],methods=[GET]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QDomainController.searchVCard(java.lang.String,java.lang.String,java.lang.String)
+2019-01-17 05:19:47,328 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmuchistory.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMucHistory(java.lang.String)
+2019-01-17 05:19:47,329 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmuchistory_v2.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMucHistory_v2(java.lang.String)
+2019-01-17 05:19:47,329 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmsgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMsg(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-17 05:19:47,330 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getreadflag.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getReadflag(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-17 05:19:47,331 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getconsultmsgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_consult_msg(java.lang.String)
+2019-01-17 05:19:47,331 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/gethistory.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.gethistory(java.lang.String)
+2019-01-17 05:19:47,332 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_system_msgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_system_msgs(java.lang.String)
+2019-01-17 05:19:47,333 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_system_history.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_system_history(java.lang.String)
+2019-01-17 05:19:47,333 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_muc_readmark.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_muc_readmark(java.lang.String)
+2019-01-17 05:19:47,334 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_muc_readmark1.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_muc_readmark1(java.lang.String)
+2019-01-17 05:19:47,335 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmucmsgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMucMsg(java.lang.String)
+2019-01-17 05:19:47,336 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/user/get_increment_users.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QHostUserController.getIncrementUsers(com.qunar.qchat.model.request.IncreUsersRequest)
+2019-01-17 05:19:47,337 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/user/get_user_decoration.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QHostUserDecorationController.getUserDecorations(com.qunar.qchat.model.request.GetHostUserDecorationRequest)
+2019-01-17 05:19:47,340 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/muc/get_increment_mucs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QMucInfoController.getIncrement(javax.servlet.http.HttpServletRequest,com.qunar.qchat.model.request.GetIncrementMucsRequest)
+2019-01-17 05:19:47,340 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/muc/set_muc_vcard.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QMucInfoController.updateMucNick(java.util.List<com.qunar.qchat.model.request.UpdateMucNickRequest>)
+2019-01-17 05:19:47,341 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/muc/get_muc_vcard.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QMucInfoController.getMucVCard(java.util.List<com.qunar.qchat.model.request.GetMucVcardRequest>)
+2019-01-17 05:19:47,342 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/qtalk_nav.qunar],methods=[GET]}" onto public java.util.Map com.qunar.qchat.controller.QNavController.qtalkNav()
+2019-01-17 05:19:47,344 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/get_anony_token.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QNckController.getAnonyToken(com.qunar.qchat.model.request.NckRequest,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 05:19:47,345 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/send_wlan_msg.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QNckController.sendWlanMessage(java.util.List<com.qunar.qchat.model.request.SendWlanMsgRequest>,javax.servlet.http.HttpServletRequest)
+2019-01-17 05:19:47,347 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/profile/get_profile.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QProfileController.getProfile(com.qunar.qchat.model.request.GetProfileRequest)
+2019-01-17 05:19:47,347 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/profile/set_profile.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QProfileController.SetProfile(com.qunar.qchat.model.request.GetProfileRequest)
+2019-01-17 05:19:47,349 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/rsa/get_public_key.do]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRSAController.getPublicKey(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-17 05:19:47,351 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/regist_robot.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.registRobot(com.qunar.qchat.model.request.RegistRobotRequest)
+2019-01-17 05:19:47,352 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/get_recommend_robot_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.getCommendRobotInfo(com.qunar.qchat.model.request.GetRecommendRobotRequest)
+2019-01-17 05:19:47,352 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/user_robot_pubsub.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.robotSubscription(com.qunar.qchat.model.request.RobotSubRequest)
+2019-01-17 05:19:47,353 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/search_robot.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.searchRobot(com.qunar.qchat.model.request.SearchRobotRequest)
+2019-01-17 05:19:47,354 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/get_robot_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.getRobotInfo(java.util.List<com.qunar.qchat.model.request.GetRobotRequest>)
+2019-01-17 05:19:47,355 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/update/getUpdateUsers.qunar],methods=[POST]}" onto public java.lang.String com.qunar.qchat.controller.QtalkUpdateStructure.updateStructure(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-17 05:19:47,514 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 05:19:46 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 05:19:47,563 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 05:19:46 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 05:19:47,712 [localhost-startStop-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 1096 ms
+17-Jan-2019 05:19:47.714 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service] has finished in [4,818] ms
+17-Jan-2019 05:19:47.718 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 05:19:47.730 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 05:19:47.731 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 172134 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c064af0] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT distinct(domain) FROM user_register_mucs WHERE username =? and host = ?; 
+==> Parameters: test1(String), qtalk.test.org(String)
+<==    Columns: domain
+<==        Row: conference.qtalk.test.org
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c064af0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@418737f7] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT muc_room_name, nick, packet, create_time, extract(epoch from date_trunc('US', create_time)), host FROM muc_room_history WHERE muc_room_name in (select distinct(muc_name) from muc_room_users where username = ? and host = ?) and create_time > to_timestamp(?) ORDER by create_time asc limit ? ; 
+==> Parameters: test1(String), qtalk.test.org(String), 1.547699188762E9(Double), 1000(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@418737f7]
+2019-01-17 05:20:08,455 [http-nio-8081-exec-1] INFO  com.qunar.qchat.controller.QGetHistoryContorller - getmuchistory.qunar 12
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6be3ce36] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT distinct(domain) FROM user_register_mucs WHERE username =? and host = ?; 
+==> Parameters: test1(String), qtalk.test.org(String)
+<==    Columns: domain
+<==        Row: conference.qtalk.test.org
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6be3ce36]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65243d3a] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT muc_name,domain,date FROM muc_room_users WHERE username =? and host = ? and update_time >to_timestamp(?); 
+==> Parameters: test1(String), qtalk.test.org(String), 0.0(Double)
+<==    Columns: muc_name, domain, date
+<==        Row: 72db1e4fa0f54379b265de59c82d871b, conference.qtalk.test.org, 1547095497166
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65243d3a]
+2019-01-17 05:20:08,642 [http-nio-8081-exec-2] INFO  com.qunar.qchat.controller.QGetHistoryContorller - gethistory.qunar start 
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c1e4d04] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: select * from ( (SELECT m_from, from_host, m_to, to_host, m_body, create_time, extract(epoch from date_trunc('US', create_time)), read_flag FROM msg_history WHERE ((m_from=? and from_host = ?) or (m_to=? and to_host = ?)) and create_time > to_timestamp(?) ORDER by create_time asc limit ?) union (SELECT m_from, from_host, m_to, to_host, m_body, create_time, extract(epoch from date_trunc('US', create_time)), read_flag FROM warn_msg_history WHERE ((m_from=? and from_host = ?) or (m_to=? and to_host = ?)) and create_time > to_timestamp(?) ORDER by create_time asc limit ?) ) as a ORDER by create_time asc limit ? ; 
+==> Parameters: test1(String), qtalk.test.org(String), test1(String), qtalk.test.org(String), 1.547699188762E9(Double), 1000(Long), test1(String), qtalk.test.org(String), test1(String), qtalk.test.org(String), 1.547699188762E9(Double), 1000(Long), 1000(Long)
+<==    Columns: m_from, from_host, m_to, to_host, m_body, create_time, date_part, read_flag
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717443102' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='a37e3e01-9255-48cc-b178-bedd8ab45c47' msgType='1'>111</body></message>, 2019-01-17 17:30:43.102+08, 1547717443.102, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717445716' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='f1eb13da-9a60-4338-a7e0-cfc5907fd299' msgType='1'>44455</body></message>, 2019-01-17 17:30:45.716+08, 1547717445.71600008, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717569413' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='397d1434-65e4-4cb5-9fcf-219f20b0775a' msgType='1'>人情世故</body></message>, 2019-01-17 17:32:49.413+08, 1547717569.41300011, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717824339' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='1d8965ac-dc52-4f1a-af33-dc83edece41f' msgType='1'>111444441</body></message>, 2019-01-17 17:37:04.339+08, 1547717824.33899999, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717824365' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='0e8814de-c1b8-47dc-8fdc-b2d16515e6bb' msgType='1'>111114411444</body></message>, 2019-01-17 17:37:04.365+08, 1547717824.36500001, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717861542' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='6bf8a83d-745f-48e1-9137-4573b0192df5' msgType='1'>11525555555555</body></message>, 2019-01-17 17:37:41.542+08, 1547717861.54200006, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547718546307' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='9b6c32bc-7e35-4ff7-bbc8-674c11a9ed3a' msgType='3'>[obj type=&quot;image&quot; value=&quot;file/v2/download/13c4134d9cf231d55839d10c9176b117.png?name=13c4134d9cf231d55839d10c9176b117.png&amp;file=13c4134d9cf231d55839d10c9176b117.png&amp;fileName=13c4134d9cf231d55839d10c9176b117.png&quot; width=1080 height=1920]</body></message>, 2019-01-17 17:49:06.307+08, 1547718546.30699992, 0
+<==      Total: 7
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c1e4d04]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cf116d6] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT id, msg_id,read_flag, extract(epoch from date_trunc('US', update_time)) as update_time FROM msg_history WHERE (m_from = ? or m_to=?) and update_time > to_timestamp(?) order by create_time desc limit 10000; 
+==> Parameters: test1(String), test1(String), 1.547699188762E9(Double)
+<==    Columns: id, msg_id, read_flag, update_time
+<==        Row: 15, 9b6c32bc-7e35-4ff7-bbc8-674c11a9ed3a, 0, 1547718546.3139379
+<==        Row: 14, 6bf8a83d-745f-48e1-9137-4573b0192df5, 0, 1547717861.55436897
+<==        Row: 13, 0e8814de-c1b8-47dc-8fdc-b2d16515e6bb, 0, 1547717824.3740201
+<==        Row: 12, 1d8965ac-dc52-4f1a-af33-dc83edece41f, 0, 1547717824.35016704
+<==        Row: 11, 397d1434-65e4-4cb5-9fcf-219f20b0775a, 0, 1547717824.31902695
+<==        Row: 10, f1eb13da-9a60-4338-a7e0-cfc5907fd299, 0, 1547717445.71836805
+<==        Row: 9, a37e3e01-9255-48cc-b178-bedd8ab45c47, 0, 1547717443.13365293
+<==        Row: 8, ef41914a-d53c-42b1-b60a-2b856a379fee, 3, 1547699188.77112293
+<==      Total: 8
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cf116d6]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@335805fa] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT m_from, m_body FROM notice_history WHERE host = ? and create_time > to_timestamp(?) ORDER by create_time asc limit ? ; 
+==> Parameters: qtalk.test.org(String), 1.547699188762E9(Double), 1000(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@335805fa]
+2019-01-17 05:20:09,051 [http-nio-8081-exec-7] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/push/getState.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 05:20:09,233 [http-nio-8081-exec-6] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/qcadmin/getHotlineShopList.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 05:20:09,236 [http-nio-8081-exec-8] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/qcloud/getCloudMain.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 05:20:09,262 [http-nio-8081-exec-1] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/scheduling/area_list.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 05:20:09,264 [http-nio-8081-exec-9] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/scheduling/get_update_list.qunar] in DispatcherServlet with name 'dispatcherServlet'
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a521ccb] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT configkey, subkey, configinfo, isdel FROM client_config_sync WHERE username = ? AND host = ? AND version > ? ORDER BY update_time; 
+==> Parameters: test1(String), qtalk.test.org(String), 0(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a521ccb]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@528fa75a] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT COALESCE(MAX(version), 0) FROM client_config_sync WHERE username = ? AND host = ?; 
+==> Parameters: test1(String), qtalk.test.org(String)
+<==    Columns: coalesce
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@528fa75a]
+17-Jan-2019 06:26:58.101 INFO [Thread-7] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:26:58.124 INFO [Thread-7] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:26:58.131 INFO [Thread-7] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+2019-01-17 06:26:58,206 [localhost-startStop-2] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 05:19:46 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 06:26:58,210 [localhost-startStop-2] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Jan 17 05:19:45 EST 2019]; root of context hierarchy
+17-Jan-2019 06:26:58.220 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [im_http_service] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+17-Jan-2019 06:26:58.253 INFO [Thread-7] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:26:58.255 INFO [Thread-7] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:26:58.257 INFO [Thread-7] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:26:58.258 INFO [Thread-7] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:38:55.918 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.37
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 12 2018 12:07:02 UTC
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.37.0
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.10.0-957.1.3.el7.x86_64
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Jan-2019 06:38:55.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /startalk/tomcat/im_http_service
+17-Jan-2019 06:38:55.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /startalk/tomcat/im_http_service
+17-Jan-2019 06:38:55.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/startalk/tomcat/im_http_service/conf/logging.properties
+17-Jan-2019 06:38:55.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Jan-2019 06:38:55.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Jan-2019 06:38:55.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/startalk/tomcat/im_http_service
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/startalk/tomcat/im_http_service
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/startalk/tomcat/im_http_service/temp
+17-Jan-2019 06:38:55.926 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+17-Jan-2019 06:38:56.060 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:38:56.080 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 06:38:56.098 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:38:56.100 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 06:38:56.100 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 656 ms
+17-Jan-2019 06:38:56.130 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Jan-2019 06:38:56.130 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.37
+17-Jan-2019 06:38:56.143 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/ROOT]
+17-Jan-2019 06:38:56.520 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/ROOT] has finished in [376] ms
+17-Jan-2019 06:38:56.520 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/docs]
+17-Jan-2019 06:38:56.537 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/docs] has finished in [17] ms
+17-Jan-2019 06:38:56.537 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/examples]
+17-Jan-2019 06:38:56.828 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/examples] has finished in [291] ms
+17-Jan-2019 06:38:56.829 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/host-manager]
+17-Jan-2019 06:38:56.858 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/host-manager] has finished in [30] ms
+17-Jan-2019 06:38:56.858 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/manager]
+17-Jan-2019 06:38:56.882 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/manager] has finished in [24] ms
+17-Jan-2019 06:38:56.882 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service]
+17-Jan-2019 06:38:59.050 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-01-17 06:38:59,255 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2019-01-17 06:38:59,338 [localhost-startStop-1] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jan 17 06:38:59 EST 2019]; root of context hierarchy
+2019-01-17 06:38:59,395 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-17 06:38:59,608 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-placeholder.xml]
+2019-01-17 06:38:59,636 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-datasource.xml]
+2019-01-17 06:38:59,682 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-redis.xml]
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+2019-01-17 06:39:00,734 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1476 ms
+2019-01-17 06:39:00,763 [localhost-startStop-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-17 06:39:00,766 [localhost-startStop-1] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 06:39:00 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 06:39:00,767 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring_servlet.xml]
+2019-01-17 06:39:00,857 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-others.xml]
+2019-01-17 06:39:01,437 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/base/get_invite_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QBaseController.getInviteInfo(com.qunar.qchat.model.request.GetInviteInfoRequest)
+2019-01-17 06:39:01,439 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/base/qtalk/get_deps.qunar],methods=[GET]}" onto public java.lang.Object com.qunar.qchat.controller.QBaseController.getDeps(com.qunar.qchat.model.request.GetDepsRequest,javax.servlet.http.HttpServletRequest)
+2019-01-17 06:39:01,440 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/base/getservertime.qunar],methods=[GET]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QBaseController.getServerTime(javax.servlet.http.HttpServletRequest)
+2019-01-17 06:39:01,441 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/config/check_config.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QCheckConfigController.checkConfig(com.qunar.qchat.model.request.CheckConfigRequest)
+2019-01-17 06:39:01,441 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/config/t],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QCheckConfigController.checkConfigIOS(com.qunar.qchat.model.request.CheckConfigRequest)
+2019-01-17 06:39:01,443 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/configuration/getincreclientconfig.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QClientConfigController.getIncreClientConfig(com.qunar.qchat.model.request.IncreClientConfigRequst)
+2019-01-17 06:39:01,443 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/configuration/setclientconfig.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QClientConfigController.setClientConfig(com.qunar.qchat.model.request.SetClientConfigRequst)
+2019-01-17 06:39:01,445 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/domain/get_user_status.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QDomainController.getUserStatus(com.qunar.qchat.model.request.GetUserStatusRequest)
+2019-01-17 06:39:01,446 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/domain/get_vcard_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QDomainController.getVCardInfo(java.util.List<com.qunar.qchat.model.request.GetVCardInfoRequest>)
+2019-01-17 06:39:01,447 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/domain/search_vcard.qunar],methods=[GET]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QDomainController.searchVCard(java.lang.String,java.lang.String,java.lang.String)
+2019-01-17 06:39:01,455 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmsgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMsg(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-17 06:39:01,456 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getreadflag.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getReadflag(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-17 06:39:01,457 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getconsultmsgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_consult_msg(java.lang.String)
+2019-01-17 06:39:01,457 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/gethistory.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.gethistory(java.lang.String)
+2019-01-17 06:39:01,458 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_system_msgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_system_msgs(java.lang.String)
+2019-01-17 06:39:01,459 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_system_history.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_system_history(java.lang.String)
+2019-01-17 06:39:01,459 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_muc_readmark.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_muc_readmark(java.lang.String)
+2019-01-17 06:39:01,460 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_muc_readmark1.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_muc_readmark1(java.lang.String)
+2019-01-17 06:39:01,460 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmucmsgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMucMsg(java.lang.String)
+2019-01-17 06:39:01,461 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmuchistory.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMucHistory(java.lang.String)
+2019-01-17 06:39:01,461 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmuchistory_v2.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMucHistory_v2(java.lang.String)
+2019-01-17 06:39:01,462 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/user/get_increment_users.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QHostUserController.getIncrementUsers(com.qunar.qchat.model.request.IncreUsersRequest)
+2019-01-17 06:39:01,463 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/user/get_user_decoration.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QHostUserDecorationController.getUserDecorations(com.qunar.qchat.model.request.GetHostUserDecorationRequest)
+2019-01-17 06:39:01,466 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/muc/get_increment_mucs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QMucInfoController.getIncrement(javax.servlet.http.HttpServletRequest,com.qunar.qchat.model.request.GetIncrementMucsRequest)
+2019-01-17 06:39:01,466 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/muc/set_muc_vcard.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QMucInfoController.updateMucNick(java.util.List<com.qunar.qchat.model.request.UpdateMucNickRequest>)
+2019-01-17 06:39:01,467 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/muc/get_muc_vcard.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QMucInfoController.getMucVCard(java.util.List<com.qunar.qchat.model.request.GetMucVcardRequest>)
+2019-01-17 06:39:01,468 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/qtalk_nav.qunar],methods=[GET]}" onto public java.util.Map com.qunar.qchat.controller.QNavController.qtalkNav()
+2019-01-17 06:39:01,469 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/get_anony_token.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QNckController.getAnonyToken(com.qunar.qchat.model.request.NckRequest,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 06:39:01,470 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/send_wlan_msg.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QNckController.sendWlanMessage(java.util.List<com.qunar.qchat.model.request.SendWlanMsgRequest>,javax.servlet.http.HttpServletRequest)
+2019-01-17 06:39:01,472 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/profile/get_profile.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QProfileController.getProfile(com.qunar.qchat.model.request.GetProfileRequest)
+2019-01-17 06:39:01,472 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/profile/set_profile.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QProfileController.SetProfile(com.qunar.qchat.model.request.GetProfileRequest)
+2019-01-17 06:39:01,473 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/rsa/get_public_key.do]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRSAController.getPublicKey(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-17 06:39:01,476 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/get_robot_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.getRobotInfo(java.util.List<com.qunar.qchat.model.request.GetRobotRequest>)
+2019-01-17 06:39:01,476 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/get_recommend_robot_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.getCommendRobotInfo(com.qunar.qchat.model.request.GetRecommendRobotRequest)
+2019-01-17 06:39:01,477 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/regist_robot.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.registRobot(com.qunar.qchat.model.request.RegistRobotRequest)
+2019-01-17 06:39:01,477 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/search_robot.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.searchRobot(com.qunar.qchat.model.request.SearchRobotRequest)
+2019-01-17 06:39:01,478 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/user_robot_pubsub.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.robotSubscription(com.qunar.qchat.model.request.RobotSubRequest)
+2019-01-17 06:39:01,479 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/update/getUpdateUsers.qunar],methods=[POST]}" onto public java.lang.String com.qunar.qchat.controller.QtalkUpdateStructure.updateStructure(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-17 06:39:01,614 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 06:39:00 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 06:39:01,678 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 06:39:00 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 06:39:01,816 [localhost-startStop-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 1052 ms
+17-Jan-2019 06:39:01.818 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service] has finished in [4,936] ms
+17-Jan-2019 06:39:01.821 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:39:01.832 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:39:01.847 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 5746 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cd64488] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT distinct(domain) FROM user_register_mucs WHERE username =? and host = ?; 
+==> Parameters: test1(String), qtalk.test.org(String)
+<==    Columns: domain
+<==        Row: conference.qtalk.test.org
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cd64488]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5868771a] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT muc_room_name, nick, packet, create_time, extract(epoch from date_trunc('US', create_time)), host FROM muc_room_history WHERE muc_room_name in (select distinct(muc_name) from muc_room_users where username = ? and host = ?) and create_time > to_timestamp(?) ORDER by create_time asc limit ? ; 
+==> Parameters: test1(String), qtalk.test.org(String), 1.547718545781E9(Double), 1000(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5868771a]
+2019-01-17 06:45:10,040 [http-nio-8081-exec-3] INFO  com.qunar.qchat.controller.QGetHistoryContorller - getmuchistory.qunar 12
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa20270] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT distinct(domain) FROM user_register_mucs WHERE username =? and host = ?; 
+==> Parameters: test1(String), qtalk.test.org(String)
+<==    Columns: domain
+<==        Row: conference.qtalk.test.org
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fa20270]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6165f1f4] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT muc_name,domain,date FROM muc_room_users WHERE username =? and host = ? and update_time >to_timestamp(?); 
+==> Parameters: test1(String), qtalk.test.org(String), 0.0(Double)
+<==    Columns: muc_name, domain, date
+<==        Row: 72db1e4fa0f54379b265de59c82d871b, conference.qtalk.test.org, 1547095497166
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6165f1f4]
+2019-01-17 06:45:10,242 [http-nio-8081-exec-2] INFO  com.qunar.qchat.controller.QGetHistoryContorller - gethistory.qunar start 
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38936c8d] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: select * from ( (SELECT m_from, from_host, m_to, to_host, m_body, create_time, extract(epoch from date_trunc('US', create_time)), read_flag FROM msg_history WHERE ((m_from=? and from_host = ?) or (m_to=? and to_host = ?)) and create_time > to_timestamp(?) ORDER by create_time asc limit ?) union (SELECT m_from, from_host, m_to, to_host, m_body, create_time, extract(epoch from date_trunc('US', create_time)), read_flag FROM warn_msg_history WHERE ((m_from=? and from_host = ?) or (m_to=? and to_host = ?)) and create_time > to_timestamp(?) ORDER by create_time asc limit ?) ) as a ORDER by create_time asc limit ? ; 
+==> Parameters: test1(String), qtalk.test.org(String), test1(String), qtalk.test.org(String), 1.547718545781E9(Double), 1000(Long), test1(String), qtalk.test.org(String), test1(String), qtalk.test.org(String), 1.547718545781E9(Double), 1000(Long), 1000(Long)
+<==    Columns: m_from, from_host, m_to, to_host, m_body, create_time, date_part, read_flag
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547718546307' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='9b6c32bc-7e35-4ff7-bbc8-674c11a9ed3a' msgType='3'>[obj type=&quot;image&quot; value=&quot;file/v2/download/13c4134d9cf231d55839d10c9176b117.png?name=13c4134d9cf231d55839d10c9176b117.png&amp;file=13c4134d9cf231d55839d10c9176b117.png&amp;fileName=13c4134d9cf231d55839d10c9176b117.png&quot; width=1080 height=1920]</body></message>, 2019-01-17 17:49:06.307+08, 1547718546.30699992, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38936c8d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67a9b4a0] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT id, msg_id,read_flag, extract(epoch from date_trunc('US', update_time)) as update_time FROM msg_history WHERE (m_from = ? or m_to=?) and update_time > to_timestamp(?) order by create_time desc limit 10000; 
+==> Parameters: test1(String), test1(String), 1.547718545781E9(Double)
+<==    Columns: id, msg_id, read_flag, update_time
+<==        Row: 15, 9b6c32bc-7e35-4ff7-bbc8-674c11a9ed3a, 0, 1547718546.3139379
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67a9b4a0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f1c5c03] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT m_from, m_body FROM notice_history WHERE host = ? and create_time > to_timestamp(?) ORDER by create_time asc limit ? ; 
+==> Parameters: qtalk.test.org(String), 1.547718545781E9(Double), 1000(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f1c5c03]
+2019-01-17 06:45:10,481 [http-nio-8081-exec-6] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/push/getState.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 06:45:10,537 [http-nio-8081-exec-8] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/qcadmin/getHotlineShopList.qunar] in DispatcherServlet with name 'dispatcherServlet'
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47c9abbf] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT configkey, subkey, configinfo, isdel FROM client_config_sync WHERE username = ? AND host = ? AND version > ? ORDER BY update_time; 
+==> Parameters: test1(String), qtalk.test.org(String), 0(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47c9abbf]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@575fdada] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT COALESCE(MAX(version), 0) FROM client_config_sync WHERE username = ? AND host = ?; 
+==> Parameters: test1(String), qtalk.test.org(String)
+<==    Columns: coalesce
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@575fdada]
+2019-01-17 06:45:10,631 [http-nio-8081-exec-9] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/scheduling/area_list.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 06:45:10,634 [http-nio-8081-exec-1] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/scheduling/get_update_list.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 06:45:10,662 [http-nio-8081-exec-3] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/qcloud/getCloudMain.qunar] in DispatcherServlet with name 'dispatcherServlet'
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@175cffa2] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT distinct(domain) FROM user_register_mucs WHERE username =? and host = ?; 
+==> Parameters: test(String), qtalk.test.org(String)
+<==    Columns: domain
+<==        Row: conference.qtalk.test.org
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@175cffa2]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@647931f7] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT muc_room_name, nick, packet, create_time, extract(epoch from date_trunc('US', create_time)), host FROM muc_room_history WHERE muc_room_name in (select distinct(muc_name) from muc_room_users where username = ? and host = ?) and create_time > to_timestamp(?) ORDER by create_time asc limit ? ; 
+==> Parameters: test(String), qtalk.test.org(String), 1.547699129594E9(Double), 1000(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@647931f7]
+2019-01-17 06:49:15,213 [http-nio-8081-exec-1] INFO  com.qunar.qchat.controller.QGetHistoryContorller - getmuchistory.qunar 12
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@837de2a] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT distinct(domain) FROM user_register_mucs WHERE username =? and host = ?; 
+==> Parameters: test(String), qtalk.test.org(String)
+<==    Columns: domain
+<==        Row: conference.qtalk.test.org
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@837de2a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21175cfc] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT muc_name,domain,date FROM muc_room_users WHERE username =? and host = ? and update_time >to_timestamp(?); 
+==> Parameters: test(String), qtalk.test.org(String), 0.0(Double)
+<==    Columns: muc_name, domain, date
+<==        Row: 72db1e4fa0f54379b265de59c82d871b, conference.qtalk.test.org, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21175cfc]
+2019-01-17 06:49:15,262 [http-nio-8081-exec-3] INFO  com.qunar.qchat.controller.QGetHistoryContorller - gethistory.qunar start 
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7145b167] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: select * from ( (SELECT m_from, from_host, m_to, to_host, m_body, create_time, extract(epoch from date_trunc('US', create_time)), read_flag FROM msg_history WHERE ((m_from=? and from_host = ?) or (m_to=? and to_host = ?)) and create_time > to_timestamp(?) ORDER by create_time asc limit ?) union (SELECT m_from, from_host, m_to, to_host, m_body, create_time, extract(epoch from date_trunc('US', create_time)), read_flag FROM warn_msg_history WHERE ((m_from=? and from_host = ?) or (m_to=? and to_host = ?)) and create_time > to_timestamp(?) ORDER by create_time asc limit ?) ) as a ORDER by create_time asc limit ? ; 
+==> Parameters: test(String), qtalk.test.org(String), test(String), qtalk.test.org(String), 1.547699129594E9(Double), 1000(Long), test(String), qtalk.test.org(String), test(String), qtalk.test.org(String), 1.547699129594E9(Double), 1000(Long), 1000(Long)
+<==    Columns: m_from, from_host, m_to, to_host, m_body, create_time, date_part, read_flag
+<==        Row: test, qtalk.test.org, test1, qtalk.test.org, <message msec_times='1547699188762' xml:lang='en' from='test@qtalk.test.org' to='test1@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='ef41914a-d53c-42b1-b60a-2b856a379fee' msgType='1'>55555555555555555555</body></message>, 2019-01-17 12:26:28.762+08, 1547699188.76200008, 3
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717443102' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='a37e3e01-9255-48cc-b178-bedd8ab45c47' msgType='1'>111</body></message>, 2019-01-17 17:30:43.102+08, 1547717443.102, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717445716' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='f1eb13da-9a60-4338-a7e0-cfc5907fd299' msgType='1'>44455</body></message>, 2019-01-17 17:30:45.716+08, 1547717445.71600008, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717569413' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='397d1434-65e4-4cb5-9fcf-219f20b0775a' msgType='1'>人情世故</body></message>, 2019-01-17 17:32:49.413+08, 1547717569.41300011, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717824339' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='1d8965ac-dc52-4f1a-af33-dc83edece41f' msgType='1'>111444441</body></message>, 2019-01-17 17:37:04.339+08, 1547717824.33899999, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717824365' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='0e8814de-c1b8-47dc-8fdc-b2d16515e6bb' msgType='1'>111114411444</body></message>, 2019-01-17 17:37:04.365+08, 1547717824.36500001, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547717861542' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='6bf8a83d-745f-48e1-9137-4573b0192df5' msgType='1'>11525555555555</body></message>, 2019-01-17 17:37:41.542+08, 1547717861.54200006, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547718546307' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='9b6c32bc-7e35-4ff7-bbc8-674c11a9ed3a' msgType='3'>[obj type=&quot;image&quot; value=&quot;file/v2/download/13c4134d9cf231d55839d10c9176b117.png?name=13c4134d9cf231d55839d10c9176b117.png&amp;file=13c4134d9cf231d55839d10c9176b117.png&amp;fileName=13c4134d9cf231d55839d10c9176b117.png&quot; width=1080 height=1920]</body></message>, 2019-01-17 17:49:06.307+08, 1547718546.30699992, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547725523406' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='fcb9661f-bba3-44bc-96ae-6c7f5dce762e' msgType='1'>4</body></message>, 2019-01-17 19:45:23.406+08, 1547725523.4059999, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547725524152' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='c1fde858-1ba4-40e5-a4b4-42b090913c29' msgType='1'>5</body></message>, 2019-01-17 19:45:24.152+08, 1547725524.15199995, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547725525145' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='38465c95-0dbb-46a5-b234-6e0a0d5642c3' msgType='1'>1</body></message>, 2019-01-17 19:45:25.145+08, 1547725525.14499998, 0
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547725525675' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='33de57f3-a969-45b9-8557-972c5e24215f' msgType='1'>2</body></message>, 2019-01-17 19:45:25.675+08, 1547725525.67499995, 0
+<==      Total: 12
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7145b167]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40770480] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT id, msg_id,read_flag, extract(epoch from date_trunc('US', update_time)) as update_time FROM msg_history WHERE (m_from = ? or m_to=?) and update_time > to_timestamp(?) order by create_time desc limit 10000; 
+==> Parameters: test(String), test(String), 1.547699129594E9(Double)
+<==    Columns: id, msg_id, read_flag, update_time
+<==        Row: 23, 33de57f3-a969-45b9-8557-972c5e24215f, 0, 1547725525.68131495
+<==        Row: 22, 38465c95-0dbb-46a5-b234-6e0a0d5642c3, 0, 1547725525.15087295
+<==        Row: 21, c1fde858-1ba4-40e5-a4b4-42b090913c29, 0, 1547725524.1582799
+<==        Row: 20, fcb9661f-bba3-44bc-96ae-6c7f5dce762e, 0, 1547725523.41447592
+<==        Row: 15, 9b6c32bc-7e35-4ff7-bbc8-674c11a9ed3a, 0, 1547718546.3139379
+<==        Row: 14, 6bf8a83d-745f-48e1-9137-4573b0192df5, 0, 1547717861.55436897
+<==        Row: 13, 0e8814de-c1b8-47dc-8fdc-b2d16515e6bb, 0, 1547717824.3740201
+<==        Row: 12, 1d8965ac-dc52-4f1a-af33-dc83edece41f, 0, 1547717824.35016704
+<==        Row: 11, 397d1434-65e4-4cb5-9fcf-219f20b0775a, 0, 1547717824.31902695
+<==        Row: 10, f1eb13da-9a60-4338-a7e0-cfc5907fd299, 0, 1547717445.71836805
+<==        Row: 9, a37e3e01-9255-48cc-b178-bedd8ab45c47, 0, 1547717443.13365293
+<==        Row: 8, ef41914a-d53c-42b1-b60a-2b856a379fee, 3, 1547699188.77112293
+<==        Row: 7, c7c355df-db10-4ab5-9e0c-021f3e68b6f1, 3, 1547699188.7495749
+<==      Total: 13
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40770480]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@606451b1] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT m_from, m_body FROM notice_history WHERE host = ? and create_time > to_timestamp(?) ORDER by create_time asc limit ? ; 
+==> Parameters: qtalk.test.org(String), 1.547699129594E9(Double), 1000(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@606451b1]
+2019-01-17 06:49:15,493 [http-nio-8081-exec-5] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/push/getState.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 06:49:15,601 [http-nio-8081-exec-7] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/qcadmin/getHotlineShopList.qunar] in DispatcherServlet with name 'dispatcherServlet'
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ed9f5a8] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT configkey, subkey, configinfo, isdel FROM client_config_sync WHERE username = ? AND host = ? AND version > ? ORDER BY update_time; 
+==> Parameters: test(String), qtalk.test.org(String), 0(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ed9f5a8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54e3aa30] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT COALESCE(MAX(version), 0) FROM client_config_sync WHERE username = ? AND host = ?; 
+==> Parameters: test(String), qtalk.test.org(String)
+<==    Columns: coalesce
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54e3aa30]
+2019-01-17 06:49:15,641 [http-nio-8081-exec-8] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/scheduling/area_list.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 06:49:15,642 [http-nio-8081-exec-9] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/scheduling/get_update_list.qunar] in DispatcherServlet with name 'dispatcherServlet'
+17-Jan-2019 06:51:52.045 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Jan-2019 06:51:52.045 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:51:52.052 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:51:52.058 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+2019-01-17 06:51:52,071 [localhost-startStop-2] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 06:39:00 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 06:51:52,073 [localhost-startStop-2] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Jan 17 06:38:59 EST 2019]; root of context hierarchy
+17-Jan-2019 06:51:52.082 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [im_http_service] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+17-Jan-2019 06:51:52.097 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:51:52.099 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:51:52.101 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:51:52.102 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:52:10.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.37
+17-Jan-2019 06:52:10.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 12 2018 12:07:02 UTC
+17-Jan-2019 06:52:10.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.37.0
+17-Jan-2019 06:52:10.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.10.0-957.1.3.el7.x86_64
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /startalk/tomcat/im_http_service
+17-Jan-2019 06:52:10.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /startalk/tomcat/im_http_service
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/startalk/tomcat/im_http_service/conf/logging.properties
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Jan-2019 06:52:10.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Jan-2019 06:52:10.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/startalk/tomcat/im_http_service
+17-Jan-2019 06:52:10.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/startalk/tomcat/im_http_service
+17-Jan-2019 06:52:10.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/startalk/tomcat/im_http_service/temp
+17-Jan-2019 06:52:10.141 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+17-Jan-2019 06:52:10.250 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:52:10.265 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 06:52:10.281 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:52:10.283 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Jan-2019 06:52:10.283 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 568 ms
+17-Jan-2019 06:52:10.311 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Jan-2019 06:52:10.311 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.37
+17-Jan-2019 06:52:10.322 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/ROOT]
+17-Jan-2019 06:52:10.693 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/ROOT] has finished in [371] ms
+17-Jan-2019 06:52:10.693 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/docs]
+17-Jan-2019 06:52:10.712 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/docs] has finished in [19] ms
+17-Jan-2019 06:52:10.713 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/examples]
+17-Jan-2019 06:52:10.987 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/examples] has finished in [274] ms
+17-Jan-2019 06:52:10.987 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/host-manager]
+17-Jan-2019 06:52:11.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/host-manager] has finished in [28] ms
+17-Jan-2019 06:52:11.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/manager]
+17-Jan-2019 06:52:11.038 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/manager] has finished in [22] ms
+17-Jan-2019 06:52:11.038 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service]
+17-Jan-2019 06:52:13.268 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-01-17 06:52:13,524 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2019-01-17 06:52:13,590 [localhost-startStop-1] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Jan 17 06:52:13 EST 2019]; root of context hierarchy
+2019-01-17 06:52:13,642 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-17 06:52:13,854 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-placeholder.xml]
+2019-01-17 06:52:13,883 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-datasource.xml]
+2019-01-17 06:52:13,932 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-redis.xml]
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+2019-01-17 06:52:15,088 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1561 ms
+2019-01-17 06:52:15,120 [localhost-startStop-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-17 06:52:15,123 [localhost-startStop-1] INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 06:52:15 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 06:52:15,124 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring_servlet.xml]
+2019-01-17 06:52:15,217 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [context-others.xml]
+2019-01-17 06:52:15,908 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/base/get_invite_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QBaseController.getInviteInfo(com.qunar.qchat.model.request.GetInviteInfoRequest)
+2019-01-17 06:52:15,910 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/base/qtalk/get_deps.qunar],methods=[GET]}" onto public java.lang.Object com.qunar.qchat.controller.QBaseController.getDeps(com.qunar.qchat.model.request.GetDepsRequest,javax.servlet.http.HttpServletRequest)
+2019-01-17 06:52:15,911 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/base/getservertime.qunar],methods=[GET]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QBaseController.getServerTime(javax.servlet.http.HttpServletRequest)
+2019-01-17 06:52:15,913 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/config/check_config.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QCheckConfigController.checkConfig(com.qunar.qchat.model.request.CheckConfigRequest)
+2019-01-17 06:52:15,914 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/config/t],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QCheckConfigController.checkConfigIOS(com.qunar.qchat.model.request.CheckConfigRequest)
+2019-01-17 06:52:15,916 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/configuration/getincreclientconfig.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QClientConfigController.getIncreClientConfig(com.qunar.qchat.model.request.IncreClientConfigRequst)
+2019-01-17 06:52:15,917 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/configuration/setclientconfig.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QClientConfigController.setClientConfig(com.qunar.qchat.model.request.SetClientConfigRequst)
+2019-01-17 06:52:15,920 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/domain/get_user_status.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QDomainController.getUserStatus(com.qunar.qchat.model.request.GetUserStatusRequest)
+2019-01-17 06:52:15,921 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/domain/get_vcard_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QDomainController.getVCardInfo(java.util.List<com.qunar.qchat.model.request.GetVCardInfoRequest>)
+2019-01-17 06:52:15,922 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/domain/search_vcard.qunar],methods=[GET]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QDomainController.searchVCard(java.lang.String,java.lang.String,java.lang.String)
+2019-01-17 06:52:15,931 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmsgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMsg(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-17 06:52:15,932 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getreadflag.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getReadflag(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-17 06:52:15,933 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getconsultmsgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_consult_msg(java.lang.String)
+2019-01-17 06:52:15,934 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/gethistory.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.gethistory(java.lang.String)
+2019-01-17 06:52:15,934 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_system_msgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_system_msgs(java.lang.String)
+2019-01-17 06:52:15,935 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_system_history.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_system_history(java.lang.String)
+2019-01-17 06:52:15,935 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_muc_readmark.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_muc_readmark(java.lang.String)
+2019-01-17 06:52:15,936 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/get_muc_readmark1.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.get_muc_readmark1(java.lang.String)
+2019-01-17 06:52:15,937 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmucmsgs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMucMsg(java.lang.String)
+2019-01-17 06:52:15,937 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmuchistory.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMucHistory(java.lang.String)
+2019-01-17 06:52:15,938 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/getmuchistory_v2.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QGetHistoryContorller.getMucHistory_v2(java.lang.String)
+2019-01-17 06:52:15,939 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/user/get_increment_users.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QHostUserController.getIncrementUsers(com.qunar.qchat.model.request.IncreUsersRequest)
+2019-01-17 06:52:15,941 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/user/get_user_decoration.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QHostUserDecorationController.getUserDecorations(com.qunar.qchat.model.request.GetHostUserDecorationRequest)
+2019-01-17 06:52:15,943 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/muc/get_increment_mucs.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QMucInfoController.getIncrement(javax.servlet.http.HttpServletRequest,com.qunar.qchat.model.request.GetIncrementMucsRequest)
+2019-01-17 06:52:15,944 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/muc/set_muc_vcard.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QMucInfoController.updateMucNick(java.util.List<com.qunar.qchat.model.request.UpdateMucNickRequest>)
+2019-01-17 06:52:15,945 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/muc/get_muc_vcard.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QMucInfoController.getMucVCard(java.util.List<com.qunar.qchat.model.request.GetMucVcardRequest>)
+2019-01-17 06:52:15,946 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/qtalk_nav.qunar],methods=[GET]}" onto public java.util.Map com.qunar.qchat.controller.QNavController.qtalkNav()
+2019-01-17 06:52:15,947 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/get_anony_token.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QNckController.getAnonyToken(com.qunar.qchat.model.request.NckRequest,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-17 06:52:15,948 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/send_wlan_msg.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QNckController.sendWlanMessage(java.util.List<com.qunar.qchat.model.request.SendWlanMsgRequest>,javax.servlet.http.HttpServletRequest)
+2019-01-17 06:52:15,950 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/profile/get_profile.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QProfileController.getProfile(com.qunar.qchat.model.request.GetProfileRequest)
+2019-01-17 06:52:15,950 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/profile/set_profile.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QProfileController.SetProfile(com.qunar.qchat.model.request.GetProfileRequest)
+2019-01-17 06:52:15,951 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/nck/rsa/get_public_key.do]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRSAController.getPublicKey(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-01-17 06:52:15,954 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/get_robot_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.getRobotInfo(java.util.List<com.qunar.qchat.model.request.GetRobotRequest>)
+2019-01-17 06:52:15,955 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/get_recommend_robot_info.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.getCommendRobotInfo(com.qunar.qchat.model.request.GetRecommendRobotRequest)
+2019-01-17 06:52:15,956 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/regist_robot.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.registRobot(com.qunar.qchat.model.request.RegistRobotRequest)
+2019-01-17 06:52:15,956 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/search_robot.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.searchRobot(com.qunar.qchat.model.request.SearchRobotRequest)
+2019-01-17 06:52:15,957 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/robot/user_robot_pubsub.qunar],methods=[POST]}" onto public com.qunar.qchat.model.JsonResult<?> com.qunar.qchat.controller.QRobotController.robotSubscription(com.qunar.qchat.model.request.RobotSubRequest)
+2019-01-17 06:52:15,958 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/newapi/update/getUpdateUsers.qunar],methods=[POST]}" onto public java.lang.String com.qunar.qchat.controller.QtalkUpdateStructure.updateStructure(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-01-17 06:52:16,130 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 06:52:15 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 06:52:16,195 [localhost-startStop-1] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Thu Jan 17 06:52:15 EST 2019]; parent: Root WebApplicationContext
+2019-01-17 06:52:16,341 [localhost-startStop-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 1221 ms
+17-Jan-2019 06:52:16.343 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/startalk/tomcat/im_http_service/webapps/im_http_service] has finished in [5,305] ms
+17-Jan-2019 06:52:16.346 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+17-Jan-2019 06:52:16.357 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Jan-2019 06:52:16.368 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 6084 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5293ee90] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT distinct(domain) FROM user_register_mucs WHERE username =? and host = ?; 
+==> Parameters: test(String), qtalk.test.org(String)
+<==    Columns: domain
+<==        Row: conference.qtalk.test.org
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5293ee90]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41dff73a] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT muc_room_name, nick, packet, create_time, extract(epoch from date_trunc('US', create_time)), host FROM muc_room_history WHERE muc_room_name in (select distinct(muc_name) from muc_room_users where username = ? and host = ?) and create_time > to_timestamp(?) ORDER by create_time asc limit ? ; 
+==> Parameters: test(String), qtalk.test.org(String), 1.54772600488E9(Double), 1000(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41dff73a]
+2019-01-17 20:35:37,585 [http-nio-8081-exec-2] INFO  com.qunar.qchat.controller.QGetHistoryContorller - getmuchistory.qunar 12
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79b77d71] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT distinct(domain) FROM user_register_mucs WHERE username =? and host = ?; 
+==> Parameters: test(String), qtalk.test.org(String)
+<==    Columns: domain
+<==        Row: conference.qtalk.test.org
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79b77d71]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77708c37] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT muc_name,domain,date FROM muc_room_users WHERE username =? and host = ? and update_time >to_timestamp(?); 
+==> Parameters: test(String), qtalk.test.org(String), 0.0(Double)
+<==    Columns: muc_name, domain, date
+<==        Row: 72db1e4fa0f54379b265de59c82d871b, conference.qtalk.test.org, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77708c37]
+2019-01-17 20:35:37,658 [http-nio-8081-exec-4] INFO  com.qunar.qchat.controller.QGetHistoryContorller - gethistory.qunar start 
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@493c6056] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: select * from ( (SELECT m_from, from_host, m_to, to_host, m_body, create_time, extract(epoch from date_trunc('US', create_time)), read_flag FROM msg_history WHERE ((m_from=? and from_host = ?) or (m_to=? and to_host = ?)) and create_time > to_timestamp(?) ORDER by create_time asc limit ?) union (SELECT m_from, from_host, m_to, to_host, m_body, create_time, extract(epoch from date_trunc('US', create_time)), read_flag FROM warn_msg_history WHERE ((m_from=? and from_host = ?) or (m_to=? and to_host = ?)) and create_time > to_timestamp(?) ORDER by create_time asc limit ?) ) as a ORDER by create_time asc limit ? ; 
+==> Parameters: test(String), qtalk.test.org(String), test(String), qtalk.test.org(String), 1.54772600488E9(Double), 1000(Long), test(String), qtalk.test.org(String), test(String), qtalk.test.org(String), 1.54772600488E9(Double), 1000(Long), 1000(Long)
+<==    Columns: m_from, from_host, m_to, to_host, m_body, create_time, date_part, read_flag
+<==        Row: test, qtalk.test.org, test1, qtalk.test.org, <message msec_times='1547726006433' xml:lang='en' from='test@qtalk.test.org' to='test1@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='ccfabeb3-b429-4f6b-bfb3-ebc644a3319f' msgType='3'>[obj type=&quot;image&quot; value=&quot;file/v2/download/443de12229204162037a1cdfc4495fa7.jpg?name=443de12229204162037a1cdfc4495fa7.jpg&amp;file=443de12229204162037a1cdfc4495fa7.jpg&amp;fileName=443de12229204162037a1cdfc4495fa7.jpg&quot; width=559 height=559]</body></message>, 2019-01-17 19:53:26.433+08, 1547726006.43300009, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@493c6056]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11ca13bf] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT id, msg_id,read_flag, extract(epoch from date_trunc('US', update_time)) as update_time FROM msg_history WHERE (m_from = ? or m_to=?) and update_time > to_timestamp(?) order by create_time desc limit 10000; 
+==> Parameters: test(String), test(String), 1.54772600488E9(Double)
+<==    Columns: id, msg_id, read_flag, update_time
+<==        Row: 24, ccfabeb3-b429-4f6b-bfb3-ebc644a3319f, 0, 1547726006.43594694
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11ca13bf]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40a89c3f] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT m_from, m_body FROM notice_history WHERE host = ? and create_time > to_timestamp(?) ORDER by create_time asc limit ? ; 
+==> Parameters: qtalk.test.org(String), 1.54772600488E9(Double), 1000(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40a89c3f]
+2019-01-17 20:35:37,874 [http-nio-8081-exec-8] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/push/getState.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 20:35:37,898 [http-nio-8081-exec-7] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/qcadmin/getHotlineShopList.qunar] in DispatcherServlet with name 'dispatcherServlet'
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52f5f1aa] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT configkey, subkey, configinfo, isdel FROM client_config_sync WHERE username = ? AND host = ? AND version > ? ORDER BY update_time; 
+==> Parameters: test(String), qtalk.test.org(String), 0(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52f5f1aa]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ca0c6f0] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT COALESCE(MAX(version), 0) FROM client_config_sync WHERE username = ? AND host = ?; 
+==> Parameters: test(String), qtalk.test.org(String)
+<==    Columns: coalesce
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ca0c6f0]
+2019-01-17 20:35:37,953 [http-nio-8081-exec-10] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/scheduling/get_update_list.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 20:35:37,957 [http-nio-8081-exec-1] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/scheduling/area_list.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 20:35:44,342 [http-nio-8081-exec-2] INFO  com.qunar.qchat.controller.QHostUserDecorationController - request parameter: GetHostUserDecorationRequest(userId=test1, host=qtalk.test.org, time=null)
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49035f0a] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: select id, d_user_id, d_host, d_type, d_url, d_url_desc, update_time from host_users_decoration where d_user_id = ? and d_host = ? order by update_time desc 
+==> Parameters: test1(String), qtalk.test.org(String)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49035f0a]
+2019-01-17 20:35:44,360 [http-nio-8081-exec-2] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-01-17 20:35:44,396 [http-nio-8081-exec-2] ERROR com.qunar.qchat.controller.QHostUserDecorationController - catch error org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: ERROR: relation "host_users_decoration" does not exist
+  Position: 163
+### The error may exist in file [/startalk/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/hostUserDecoration.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select           id,           d_user_id,           d_host,           d_type,           d_url,           d_url_desc,           update_time         from           host_users_decoration         where d_user_id = ?           and d_host = ?           order by update_time desc
+### Cause: org.postgresql.util.PSQLException: ERROR: relation "host_users_decoration" does not exist
+  Position: 163
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: ERROR: relation "host_users_decoration" does not exist
+  Position: 163
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:230)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:421)
+	at com.sun.proxy.$Proxy14.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:206)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy33.selectUserDecorations(Unknown Source)
+	at com.qunar.qchat.controller.QHostUserDecorationController.getUserDecorations(QHostUserDecorationController.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:849)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:760)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.qunar.qchat.filter.PostDataDumpFilter.doFilter(PostDataDumpFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "host_users_decoration" does not exist
+  Position: 163
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2477)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2190)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:300)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:158)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy43.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:408)
+	... 53 more
+
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c23d276] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT distinct(domain) FROM user_register_mucs WHERE username =? and host = ?; 
+==> Parameters: test1(String), qtalk.test.org(String)
+<==    Columns: domain
+<==        Row: conference.qtalk.test.org
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c23d276]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16a4c6d9] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT muc_room_name, nick, packet, create_time, extract(epoch from date_trunc('US', create_time)), host FROM muc_room_history WHERE muc_room_name in (select distinct(muc_name) from muc_room_users where username = ? and host = ?) and create_time > to_timestamp(?) ORDER by create_time asc limit ? ; 
+==> Parameters: test1(String), qtalk.test.org(String), 1.547725524815E9(Double), 1000(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16a4c6d9]
+2019-01-17 20:36:05,141 [http-nio-8081-exec-4] INFO  com.qunar.qchat.controller.QGetHistoryContorller - getmuchistory.qunar 12
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@732c1c2a] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT distinct(domain) FROM user_register_mucs WHERE username =? and host = ?; 
+==> Parameters: test1(String), qtalk.test.org(String)
+<==    Columns: domain
+<==        Row: conference.qtalk.test.org
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@732c1c2a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f6eb0dc] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT muc_name,domain,date FROM muc_room_users WHERE username =? and host = ? and update_time >to_timestamp(?); 
+==> Parameters: test1(String), qtalk.test.org(String), 0.0(Double)
+<==    Columns: muc_name, domain, date
+<==        Row: 72db1e4fa0f54379b265de59c82d871b, conference.qtalk.test.org, 1547095497166
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f6eb0dc]
+2019-01-17 20:36:05,190 [http-nio-8081-exec-6] INFO  com.qunar.qchat.controller.QGetHistoryContorller - gethistory.qunar start 
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e6f7a5a] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: select * from ( (SELECT m_from, from_host, m_to, to_host, m_body, create_time, extract(epoch from date_trunc('US', create_time)), read_flag FROM msg_history WHERE ((m_from=? and from_host = ?) or (m_to=? and to_host = ?)) and create_time > to_timestamp(?) ORDER by create_time asc limit ?) union (SELECT m_from, from_host, m_to, to_host, m_body, create_time, extract(epoch from date_trunc('US', create_time)), read_flag FROM warn_msg_history WHERE ((m_from=? and from_host = ?) or (m_to=? and to_host = ?)) and create_time > to_timestamp(?) ORDER by create_time asc limit ?) ) as a ORDER by create_time asc limit ? ; 
+==> Parameters: test1(String), qtalk.test.org(String), test1(String), qtalk.test.org(String), 1.547725524815E9(Double), 1000(Long), test1(String), qtalk.test.org(String), test1(String), qtalk.test.org(String), 1.547725524815E9(Double), 1000(Long), 1000(Long)
+<==    Columns: m_from, from_host, m_to, to_host, m_body, create_time, date_part, read_flag
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547725525145' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='38465c95-0dbb-46a5-b234-6e0a0d5642c3' msgType='1'>1</body></message>, 2019-01-17 19:45:25.145+08, 1547725525.14499998, 3
+<==        Row: test1, qtalk.test.org, test, qtalk.test.org, <message msec_times='1547725525675' xml:lang='en' from='test1@qtalk.test.org' to='test@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='33de57f3-a969-45b9-8557-972c5e24215f' msgType='1'>2</body></message>, 2019-01-17 19:45:25.675+08, 1547725525.67499995, 3
+<==        Row: test, qtalk.test.org, test1, qtalk.test.org, <message msec_times='1547726006433' xml:lang='en' from='test@qtalk.test.org' to='test1@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='ccfabeb3-b429-4f6b-bfb3-ebc644a3319f' msgType='3'>[obj type=&quot;image&quot; value=&quot;file/v2/download/443de12229204162037a1cdfc4495fa7.jpg?name=443de12229204162037a1cdfc4495fa7.jpg&amp;file=443de12229204162037a1cdfc4495fa7.jpg&amp;fileName=443de12229204162037a1cdfc4495fa7.jpg&quot; width=559 height=559]</body></message>, 2019-01-17 19:53:26.433+08, 1547726006.43300009, 0
+<==        Row: test, qtalk.test.org, test1, qtalk.test.org, <message msec_times='1547775348866' xml:lang='en' from='test@qtalk.test.org' to='test1@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='a9003408-12ba-4e5d-a666-f0c60f07012c' msgType='1'>1</body></message>, 2019-01-18 09:35:48.866+08, 1547775348.86599994, 0
+<==        Row: test, qtalk.test.org, test1, qtalk.test.org, <message msec_times='1547775349570' xml:lang='en' from='test@qtalk.test.org' to='test1@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='175f1fec-f2d5-4f7e-8265-27eef251a9ef' msgType='1'>4</body></message>, 2019-01-18 09:35:49.57+08, 1547775349.56999993, 0
+<==        Row: test, qtalk.test.org, test1, qtalk.test.org, <message msec_times='1547775350690' xml:lang='en' from='test@qtalk.test.org' to='test1@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='7244b0b8-6d18-4711-b8b6-69881d8c4fe6' msgType='1'>7</body></message>, 2019-01-18 09:35:50.69+08, 1547775350.69000006, 0
+<==        Row: test, qtalk.test.org, test1, qtalk.test.org, <message msec_times='1547775355252' xml:lang='en' from='test@qtalk.test.org' to='test1@qtalk.test.org' type='chat' client_type='ClientTypeAndroid' client_ver='0'><body id='bbca82b3-f9ff-48a7-b048-296ac8711eac' msgType='3'>[obj type=&quot;image&quot; value=&quot;file/v2/download/e1798960a2fc2c858361e5fda5105a1d.jpg?name=e1798960a2fc2c858361e5fda5105a1d.jpg&amp;file=e1798960a2fc2c858361e5fda5105a1d.jpg&amp;fileName=e1798960a2fc2c858361e5fda5105a1d.jpg&quot; width=699 height=1244]</body></message>, 2019-01-18 09:35:55.252+08, 1547775355.25200009, 0
+<==      Total: 7
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e6f7a5a]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bfbb8a8] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT id, msg_id,read_flag, extract(epoch from date_trunc('US', update_time)) as update_time FROM msg_history WHERE (m_from = ? or m_to=?) and update_time > to_timestamp(?) order by create_time desc limit 10000; 
+==> Parameters: test1(String), test1(String), 1.547725524815E9(Double)
+<==    Columns: id, msg_id, read_flag, update_time
+<==        Row: 28, bbca82b3-f9ff-48a7-b048-296ac8711eac, 0, 1547775355.2565999
+<==        Row: 27, 7244b0b8-6d18-4711-b8b6-69881d8c4fe6, 0, 1547775350.69400311
+<==        Row: 26, 175f1fec-f2d5-4f7e-8265-27eef251a9ef, 0, 1547775349.57746196
+<==        Row: 25, a9003408-12ba-4e5d-a666-f0c60f07012c, 0, 1547775348.87058806
+<==        Row: 24, ccfabeb3-b429-4f6b-bfb3-ebc644a3319f, 0, 1547726006.43594694
+<==        Row: 23, 33de57f3-a969-45b9-8557-972c5e24215f, 3, 1547725525.68131495
+<==        Row: 22, 38465c95-0dbb-46a5-b234-6e0a0d5642c3, 3, 1547725525.15087295
+<==      Total: 7
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bfbb8a8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@544c8704] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT m_from, m_body FROM notice_history WHERE host = ? and create_time > to_timestamp(?) ORDER by create_time asc limit ? ; 
+==> Parameters: qtalk.test.org(String), 1.547725524815E9(Double), 1000(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@544c8704]
+2019-01-17 20:36:05,411 [http-nio-8081-exec-9] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/push/getState.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 20:36:05,476 [http-nio-8081-exec-10] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/qcadmin/getHotlineShopList.qunar] in DispatcherServlet with name 'dispatcherServlet'
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31825294] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT configkey, subkey, configinfo, isdel FROM client_config_sync WHERE username = ? AND host = ? AND version > ? ORDER BY update_time; 
+==> Parameters: test1(String), qtalk.test.org(String), 0(Long)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31825294]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a4986e5] was not registered for synchronization because synchronization is not active
+JDBC Connection [jdbc:postgresql://127.0.0.1:5432/ejabberd, UserName=ejabberd, PostgreSQL JDBC Driver] will not be managed by Spring
+==>  Preparing: SELECT COALESCE(MAX(version), 0) FROM client_config_sync WHERE username = ? AND host = ?; 
+==> Parameters: test1(String), qtalk.test.org(String)
+<==    Columns: coalesce
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a4986e5]
+2019-01-17 20:36:05,555 [http-nio-8081-exec-2] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/scheduling/get_update_list.qunar] in DispatcherServlet with name 'dispatcherServlet'
+2019-01-17 20:36:05,576 [http-nio-8081-exec-3] WARN  org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/im_http_service/newapi/scheduling/area_list.qunar] in DispatcherServlet with name 'dispatcherServlet'

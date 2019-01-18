@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qunar.qchat.dao.IRobotPubSubDao">
+
+
+    <resultMap id="RobotPubSubResultMap" type="com.qunar.qchat.dao.model.RobotPubSubModel">
+        <result column="rbt_name" property="rbtName"></result>
+        <result column="user_name" property="userName"></result>
+        <result column="user_host" property="userHost"></result>
+        <result column="rbt_host" property="rbtHost"></result>
+    </resultMap>
+
+
+    <insert id="insertPubSub" parameterType="com.qunar.qchat.dao.model.RobotPubSubModel">
+        insert into robot_pubsub (rbt_name, user_name
+           <if test="userHost != null and userHost != ''">
+             , user_host
+           </if>
+           <if test="rbtHost != null and rbtHost != ''">
+             , rbt_host
+           </if>
+          )
+          values (
+              #{rbtName}, #{userName}
+             <if test="userHost != null and userHost != ''">
+              , #{userHost}
+             </if>
+             <if test="rbtHost != null and rbtHost != ''">
+              , #{rbtHost}
+             </if>
+        )
+    </insert>
+
+    <delete id="deletePubSub" parameterType="com.qunar.qchat.dao.model.RobotPubSubModel">
+        delete from robot_pubsub
+        where rbt_name = #{rbtName}
+          and user_name = #{userName}
+          <if test="userHost != null and userHost != ''">
+            and user_host = #{userHost}
+          </if>
+    </delete>
+
+    <select id="selectAllUserPubSub" resultMap="RobotPubSubResultMap">
+        select rbt_name, user_name, user_host, rbt_host from robot_pubsub
+        where user_name = #{userName}
+          <if test="userHost != null and userHost != ''">
+             and user_host = #{userHost}
+          </if>
+    </select>
+
+    <select id="selectPubSubCountByKey"  resultType="integer">
+        select count(*) from robot_pubsub
+        where user_name = #{userName}
+          and rbt_name = #{rbtName}
+          <if test="userHost != null and userHost != ''">
+              and user_host = #{userHost}
+          </if>
+    </select>
+
+</mapper>

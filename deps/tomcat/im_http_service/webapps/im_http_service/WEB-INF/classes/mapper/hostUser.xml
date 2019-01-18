@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qunar.qchat.dao.IHostUserDao">
+
+    <resultMap id="HostUserModel" type="com.qunar.qchat.dao.model.HostUserModel">
+        <id column="id" property="id"/>
+        <result column="host_id" property="hostId"/>
+        <result column="user_id" property="userId"/>
+        <result column="user_name" property="userName"/>
+        <result column="department" property="department"/>
+        <result column="tel" property="tel"/>
+        <result column="email" property="email"/>
+        <result column="dep1" property="dep1"/>
+        <result column="dep2" property="dep2"/>
+        <result column="dep3" property="dep3"/>
+        <result column="dep4" property="dep4"/>
+        <result column="dep5" property="dep5"/>
+        <result column="pinyin" property="pinyin"/>
+        <result column="frozen_flag" property="frozenFlag"/>
+        <result column="version" property="version"/>
+        <result column="user_type" property="userType"/>
+        <result column="hire_flag" property="hireFlag"/>
+        <result column="gender" property="gender"/>
+        <result column="password" property="password"/>
+        <result column="initialpwd" property="initialpwd"/>
+        <result column="ps_deptid" property="psDeptid"/>
+    </resultMap>
+
+
+    <resultMap id="HostUserForVersion" type="com.qunar.qchat.dao.model.HostUserModel">
+        <result column="user_id" property="userId"/>
+        <result column="user_name" property="userName"/>
+        <result column="department" property="department"/>
+        <result column="pinyin" property="pinyin"/>
+        <result column="version" property="version"/>
+        <result column="user_type" property="userType"/>
+        <result column="hire_flag" property="hireFlag"/>
+    </resultMap>
+
+    <sql id="column_all">
+        id,host_id,user_id,user_name,department,tel,email,dep1,dep2,dep3,dep4,dep5,pinyin,
+        frozen_flag,version,user_type,hire_flag,gender,password,initialpwd,ps_deptid
+    </sql>
+
+    <sql id="column_version">
+        user_id, user_name, department, pinyin, version, user_type, hire_flag
+    </sql>
+
+    <select id="selectIncrementByVersion" resultMap="HostUserForVersion">
+        select <include refid="column_version"/> from ${table} where version > ${version} and host_id = #{hostId}
+    </select>
+
+    <select id="selectMaxVersion" resultType="int">
+        select max(version) from ${table}
+    </select>
+
+</mapper>
