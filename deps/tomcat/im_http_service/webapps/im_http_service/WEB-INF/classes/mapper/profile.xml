@@ -29,7 +29,8 @@
             <if test="mood != null and mood != ''">
                 mood = #{mood},
             </if>
-            profile_version = vcard_version.profile_version + 1
+            profile_version = vcard_version.profile_version + 1,
+            version = vcard_version.version + 1
         </set>
         where username= #{username} and host = #{host}
 

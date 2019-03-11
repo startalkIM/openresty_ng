@@ -1,1 +1,72 @@
-{}
+{
+  "version": 1,
+  "company": "openresty",
+  "exists": true,
+  "ability": {
+    "base": [
+      "friend",
+      "group"
+    ],
+    "group": [
+      "redpackage"
+    ]
+  },
+  "otherconfig": {
+    "cachefileurl": "",
+    "redpackageurl": "",
+    "balanceurl": "",
+    "thanksurl": "https://qt.qunar.com/qtalkIosThanks.html",
+    "aacollectionurl": "",
+    "myredpackageurl": ""
+  },
+  "trdextendmsg": [
+    {
+      "trdextendId": "Album",
+      "scope": 3,
+      "icon": "https://qt.qunar.com/file/v2/download/avatar/new/aio_icons_pic.png?name=aio_icons_pic.png",
+      "i18NTitle": "",
+      "linkType": 0,
+      "linkurl": "",
+      "title": "相册",
+      "support": 63
+    },
+    {
+      "trdextendId": "Camera",
+      "scope": 3,
+      "icon": "https://qt.qunar.com/file/v2/download/avatar/new/aio_icons_camera.png?name=aio_icons_camera.png",
+      "i18NTitle": "",
+      "linkType": 0,
+      "linkurl": "",
+      "title": "拍照",
+      "support": 63
+    },
+    {
+      "trdextendId": "MyFile",
+      "scope": 3,
+      "icon": "https://qt.qunar.com/file/v2/download/avatar/new/aio_icons_folder.png?name=aio_icons_folder.png",
+      "i18NTitle": "",
+      "linkType": 0,
+      "linkurl": "",
+      "title": "文件",
+      "support": 63
+    },
+    {
+      "trdextendId": "Location",
+      "scope": 3,
+      "icon": "https://qt.qunar.com/file/v2/download/avatar/new/aio_icons_location.png?name=aio_icons_location.png",
+      "i18NTitle": "",
+      "linkType": 0,
+      "linkurl": "",
+      "title": "地理位置",
+      "support": 3
+    },
+    {
+      "support": 1,
+      "trdextendId": "Shock",
+      "title": "窗口抖动",
+      "i18NTitle": "",
+      "scope": 3,
+      "icon": "https://qt.qunar.com/file/v2/download/avatar/new/aio_icons_shake.png?name=aio_icons_shake.png"
+    }
+  ]
+}

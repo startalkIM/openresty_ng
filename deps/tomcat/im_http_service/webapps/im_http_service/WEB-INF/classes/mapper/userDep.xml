@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--*********************************************************************-->
+<!---***********************host_users insert****************************-->
+<!--*********************************************************************-->
+<mapper namespace="com.qunar.qchat.dao.IUserInfo">
+    <!--*******************************************************************************-->
+    <!---***********************host_users select max vcard_version********************-->
+    <!--*******************************************************************************-->
+    <select id="selectMaxVersion"
+            resultType="int" parameterType="java.lang.Integer">
+        SELECT
+        max(version)
+        FROM host_users where host_id=#{hostID}
+       limit 1;
+    </select>
+
+
+    <select id="getUsersByHostAndVersion" resultType="com.qunar.qchat.dao.model.UserInfoQtalk">
+    SELECT
+        user_id AS user_id,
+        department AS department,
+        user_name AS user_name,
+        dep1 AS dep1,
+        dep2 AS dep2,
+        dep3 AS dep3,
+        dep4 AS dep4,
+        dep5 AS dep5,
+        ps_deptid AS ps_deptid,
+        gender AS gender,
+        hire_flag AS hire_flag,
+        user_type AS user_type,
+        version AS version,
+        email AS email,
+        pinyin AS pinyin
+        FROM host_users
+        where host_id=#{hostID} and version>#{version};
+</select>
+
+    <select id="getHostInfo" parameterType="java.lang.String" resultType="java.lang.Integer">
+        SELECT id FROM host_info where host=#{hostID};
+    </select>
+
+    <select id="getQtalkUsersByVersion" parameterType="java.lang.Integer"
+            resultType="com.qunar.qchat.dao.model.UserInfoQtalk">
+        select
+        user_id AS user_id,
+        department AS department,
+        user_name AS user_name,
+        dep1 AS dep1,
+        dep2 AS dep2,
+        dep3 AS dep3,
+        dep4 AS dep4,
+        dep5 AS dep5,
+        ps_deptid AS ps_deptid,
+        gender AS gender,
+        hire_flag AS hire_flag,
+        user_type AS user_type,
+        version AS version,
+        email AS email,
+        pinyin AS pinyi
+                FROM host_users
+        where host_id=#{hostID} and version>#{version};
+    </select>
+
+</mapper>

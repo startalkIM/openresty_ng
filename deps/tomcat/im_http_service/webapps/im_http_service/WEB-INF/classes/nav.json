@@ -23,5 +23,24 @@
   "ability": {
     "searchurl": "http://ip:8080/search/search.py"
   },
+  "RNAndroidAbility": {
+    "RNMineView": true,
+    "RNGroupCardView": true,
+    "RNPublicNumberListView": false,
+    "RNAboutView": false,
+    "RNGroupListView": false,
+    "RNContactView": true,
+    "RNSettingView": true,
+    "RNUserCardView": true
+  }, "RNAbility": {
+  "RNMineView": true,
+  "RNGroupCardView": true,
+  "RNPublicNumberListView": true,
+  "RNAboutView": false,
+  "RNGroupListView": true,
+  "RNContactView": true,
+  "RNSettingView": true,
+  "RNUserCardView": true
+},
   "version": 10005
 }

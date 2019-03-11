@@ -19,8 +19,14 @@
     </sql>
 
     <select id="selectMucIncrementInfo" resultType="com.qunar.qchat.dao.model.MucIncrementInfo">
-        select muc_name,domain,(extract(epoch from date_trunc('MS', created_at))*1000 - 8*3600*1000) as t,registed_flag
+        select muc_name,created_at,domain,(extract(epoch from date_trunc('MS', created_at))*1000 - 8*3600*1000) as t,registed_flag
         from user_register_mucs where created_at > to_timestamp(#{t}) and username = #{u} and host = #{d};
+    </select>
+
+    <select id="selectMucIncrementInfoNew" resultType="com.qunar.qchat.dao.model.MucIncrementInfo">
+        select muc_name,created_at,domain,(extract(epoch from date_trunc('MS', created_at))*1000 - 8*3600*1000) as t,registed_flag
+        from user_register_mucs where created_at > to_timestamp(#{t},'YYYY-MM-DD hh24:MI:ss.ms')
+        and username = #{u} and host = #{d} order by created_at desc;
     </select>
 
     <select id="updateMucInfo" parameterType="com.qunar.qchat.dao.model.MucInfoModel" resultMap="mucIncrementInfoResultMap">
@@ -37,11 +43,66 @@
          returning muc_name,show_name,muc_desc,muc_title,muc_pic,version
     </select>
 
+    <select id="selectMucCountByMucName" resultType="int">
+        select count(*) from muc_vcard_info where muc_name = #{mucName}
+    </select>
 
     <select id="selectMucInfoByIds" resultMap="mucIncrementInfoResultMap">
         select <include refid="column_all"/> from muc_vcard_info where muc_name in
           <foreach collection="ids" separator="," item="id" open="(" close=")">#{id}</foreach>
 
+    </select>
+
+    <select id="checkMucExist" resultType="int">
+        select count(*) from muc_room where name = #{mucName}
+    </select>
+
+    <insert id="insertMucInfo" parameterType="com.qunar.qchat.dao.model.MucInfoModel">
+        insert into muc_vcard_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            /* private String mucName;
+            private String showName;
+            private String mucDesc;
+            private String mucTitle;
+            private String mucPic;
+            private String version;*/
+            <if test="mucName != null">
+                muc_name,
+            </if>
+            <if test="mucDesc != null">
+                muc_desc,
+            </if>
+            <if test="showName != null">
+                show_name,
+            </if>
+            <if test="mucTitle != null">
+                muc_title,
+            </if>
+            <if test="mucPic != null">
+                muc_pic,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="mucName != null">
+                #{mucName},
+            </if>
+            <if test="mucDesc != null">
+                #{mucDesc},
+            </if>
+            <if test="showName != null">
+                #{showName},
+            </if>
+            <if test="mucTitle != null">
+                #{mucTitle},
+            </if>
+            <if test="mucPic != null">
+                #{mucPic},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="selectByMucName" resultMap="mucIncrementInfoResultMap">
+        select <include refid="column_all"/> from muc_vcard_info where muc_name = #{mucName}
     </select>
 
 </mapper>
