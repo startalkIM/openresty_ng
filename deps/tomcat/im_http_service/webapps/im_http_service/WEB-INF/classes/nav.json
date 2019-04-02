@@ -18,7 +18,8 @@
   },
   "imConfig": {
     "RsaEncodeType": 1,
-    "showOrganizational": true
+    "showOrganizational": true,
+    "mail":"qtalk.test.org"
   },
   "ability": {
     "searchurl": "http://ip:8080/search/search.py"

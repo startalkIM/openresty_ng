@@ -5,6 +5,24 @@
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- quartz -->
+    <bean name="schedulingNotice" class="com.qunar.qchat.task.SchedulingNotice"/>
 
+    <bean id="schedulingNoticeJob"  class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="schedulingNotice"/>
+        <property name="targetMethod" value="process"/>
+        <property name="concurrent" value="false"/>
+    </bean>
+
+    <bean id="schedulingNoticeJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="schedulingNoticeJob"/>
+        <property name="cronExpression" value="*/30 * * * * ?"></property>
+    </bean>
+
+    <bean name="quartzScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="schedulingNoticeJobTrigger"/>
+            </list>
+        </property>
+    </bean>
 </beans>

@@ -33,9 +33,9 @@
        update muc_vcard_info
          <set>
             <if test="showName != null and showName != ''"> show_name = #{showName}, </if>
-            <if test="mucDesc != null and mucDesc != ''"> muc_desc = #{mucDesc}, </if>
-            <if test="mucTitle != null and mucTitle != ''"> muc_title = #{mucTitle}, </if>
-            <if test="mucPic != null and mucPi != ''"> muc_pic = #{mucPic}, </if>
+            <if test="mucDesc != null"> muc_desc = #{mucDesc}, </if>
+            <if test="mucTitle != null"> muc_title = #{mucTitle}, </if>
+            <if test="mucPic != null and mucPic != ''"> muc_pic = #{mucPic}, </if>
             version = cast(muc_vcard_info.version as integer)+ 1
          </set>
          where muc_name = #{mucName}

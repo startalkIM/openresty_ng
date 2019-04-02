@@ -43,6 +43,10 @@
     <select id="getHostInfo" parameterType="java.lang.String" resultType="java.lang.Integer">
         SELECT id FROM host_info where host=#{hostID};
     </select>
+    <select id="getDomain" parameterType="java.lang.Integer" resultType="java.lang.String">
+        SELECT host FROM host_info where id=#{hostID};
+    </select>
+
 
     <select id="getQtalkUsersByVersion" parameterType="java.lang.Integer"
             resultType="com.qunar.qchat.dao.model.UserInfoQtalk">
@@ -64,6 +68,9 @@
         pinyin AS pinyi
                 FROM host_users
         where host_id=#{hostID} and version>#{version};
+    </select>
+    <select id="getAllUsersByHost" resultType="java.lang.String" parameterType="java.lang.Integer">
+        select user_id from host_users where host_id=#{hostId} and hire_flag=1;
     </select>
 
 </mapper>
