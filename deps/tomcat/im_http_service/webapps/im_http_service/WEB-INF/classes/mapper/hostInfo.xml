@@ -18,4 +18,8 @@
         select id, host from host_info where host = #{domain}
     </select>
 
+    <select id="selectDefaultHost" resultMap="HostInfoResultMap">
+        select id, host from host_info order by id limit 1;
+    </select>
+
 </mapper>

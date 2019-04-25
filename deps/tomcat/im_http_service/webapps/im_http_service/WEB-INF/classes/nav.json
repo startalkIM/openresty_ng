@@ -14,12 +14,17 @@
     "pubkey": "rsa_public_key",
     "xmppmport": 5222,
     "httpurl": "http://ip:8080/newapi",
-    "apiurl": "http://ip:8080/api"
+    "apiurl": "http://ip:8080/api",
+    "mobileurl":"http://ip:8080/newapi/getMobile.qunar",
+    "leaderurl":"http://ip:8080/newapi/getLeader.qunar",
+    "shareurl":"http://ip:8080/newapi",
+    "domainhost":"qunar.com"
   },
   "imConfig": {
     "RsaEncodeType": 1,
     "showOrganizational": true,
-    "mail":"qtalk.test.org"
+    "mail":"qtalk.test.org",
+    "foundConfigUrl":"http://ip:port/startalk/management/find/get/navigation"
   },
   "ability": {
     "searchurl": "http://ip:8080/search/search.py"

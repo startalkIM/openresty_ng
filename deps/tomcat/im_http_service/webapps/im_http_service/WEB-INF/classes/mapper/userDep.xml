@@ -73,4 +73,41 @@
         select user_id from host_users where host_id=#{hostId} and hire_flag=1;
     </select>
 
+    <select id="getUserMobile" resultType="java.lang.String">
+        select tel from host_users where user_id=#{userId} and host_id = #{hostId};
+    </select>
+
+
+    <select id="getUserLeader" resultType="java.lang.String">
+        select leader from host_users where user_id=#{userId} and host_id=#{hostId};
+    </select>
+    <select id="getUserHireFlag"  resultType="java.lang.Integer">
+        select hire_flag from host_users where user_id=#{userId} and host_id=#{hostId};
+    </select>
+
+    <select id="selectUserByUserId" resultType="com.qunar.qchat.dao.model.UserInfoQtalk">
+        select
+        user_id AS user_id,
+        department AS department,
+        user_name AS user_name,
+        dep1 AS dep1,
+        dep2 AS dep2,
+        dep3 AS dep3,
+        dep4 AS dep4,
+        dep5 AS dep5,
+        ps_deptid AS ps_deptid,
+        gender AS gender,
+        hire_flag AS hire_flag,
+        user_type AS user_type,
+        version AS version,
+        email AS email,
+        leader AS leader,
+        pinyin AS pinyi,
+        leader AS leader,
+        hrbp as hrbp,
+        user_role as user_role
+                FROM host_users
+        where host_id=#{hostId} and user_id=#{userId};
+    </select>
+
 </mapper>

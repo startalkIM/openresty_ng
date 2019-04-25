@@ -9,7 +9,7 @@
     </select>
 
     <select id="selectProfileInfoByUserAndHost" resultType="com.qunar.qchat.dao.model.Profile">
-        select username, host, mood, profile_version as version from vcard_version where username= #{username} and host = #{host} order by profile_version desc limit 1;
+        select username, host, mood, url, profile_version as version from vcard_version where username= #{username} and host = #{host} order by profile_version desc limit 1;
     </select>
 
     <select id="updateProfileInfo" resultType="com.qunar.qchat.dao.model.Profile">
