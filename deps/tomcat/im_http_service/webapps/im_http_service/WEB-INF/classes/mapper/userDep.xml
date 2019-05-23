@@ -102,10 +102,7 @@
         version AS version,
         email AS email,
         leader AS leader,
-        pinyin AS pinyi,
-        leader AS leader,
-        hrbp as hrbp,
-        user_role as user_role
+        pinyin AS pinyi
                 FROM host_users
         where host_id=#{hostId} and user_id=#{userId};
     </select>
