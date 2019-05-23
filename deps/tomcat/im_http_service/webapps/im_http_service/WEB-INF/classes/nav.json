@@ -15,19 +15,17 @@
     "xmppmport": 5222,
     "httpurl": "http://ip:8080/newapi",
     "apiurl": "http://ip:8080/api",
-    "mobileurl":"http://ip:8080/newapi/getMobile.qunar",
-    "leaderurl":"http://ip:8080/newapi/getLeader.qunar",
-    "shareurl":"http://ip:8080/newapi",
+    "shareurl":"http://ip:8080/py/sharemsg",
     "domainhost":"qunar.com"
   },
   "imConfig": {
     "RsaEncodeType": 1,
     "showOrganizational": true,
-    "mail":"qtalk.test.org",
-    "foundConfigUrl":"http://ip:port/startalk/management/find/get/navigation"
+    "mail":"qtalk.test.org"
   },
   "ability": {
-    "searchurl": "http://ip:8080/search/search.py"
+    "searchurl": "http://ip:8080/py/search",
+    "showmsgstat": true
   },
   "RNAndroidAbility": {
     "RNMineView": true,
@@ -48,5 +46,5 @@
   "RNSettingView": true,
   "RNUserCardView": true
 },
-  "version": 10005
+  "version": 1
 }
