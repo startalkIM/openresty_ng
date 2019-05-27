@@ -16,7 +16,7 @@
     "httpurl": "http://ip:8080/newapi",
     "apiurl": "http://ip:8080/api",
     "shareurl":"http://ip:8080/py/sharemsg",
-    "domainhost":"qunar.com",
+    "domainhost":"ip",
     "resetPwdUrl":"http://ip:8080/static/reterievepassword.html"
   },
   "imConfig": {
