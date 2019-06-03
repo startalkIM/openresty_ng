@@ -42,15 +42,6 @@ else
     echo "success: ejabberd port 10050 is open"
 fi
 
-result=`netstat -ntl | grep 5222`
-
-if [[ -z $result ]];
-then
-    echo "error: ejabberd port 5222 is not open"
-else
-    echo "success: ejabberd port 5222 is open"
-fi
-
 result=`netstat -ntl | grep 5202`
 
 if [[ -z $result ]];
@@ -141,5 +132,5 @@ grep -A 1 "^hosts:" /startalk/ejabberd/etc/ejabberd/ejabberd.yml
 # check database setting
 echo "=============================================================="
 echo "postgresql data is:"
-sudo -u postgres psql  -d ejabberd -c "select * from host_info;"
-sudo -u postgres psql  -d ejabberd -c "select host_id, user_id from host_users;"
+psql -U postgres -d ejabberd -c "select * from host_info;"
+psql -U postgres -d ejabberd -c "select host_id, user_id from host_users;"
