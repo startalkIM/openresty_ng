@@ -54,7 +54,7 @@ redis连接地址配置
 停止：/startalk/openresty/nginx/sbin/nginx -s stop
 ```
 
-## or重启
+## or升级
 
 ```
 $ cd /startalk/download/or_open
