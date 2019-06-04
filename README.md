@@ -53,3 +53,13 @@ redis连接地址配置
 启动：/startalk/openresty/nginx/sbin/nginx
 停止：/startalk/openresty/nginx/sbin/nginx -s stop
 ```
+
+## or重启
+
+```
+$ cd /startalk/download/or_open
+$ git pull
+$ cp -rf conf /startalk/openresty/nginx
+$ cp -rf lua_app /startalk/openresty/nginx
+$ sudo /startalk/openresty/nginx/sbin/nginx -s reload
+```
