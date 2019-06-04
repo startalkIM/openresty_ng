@@ -120,8 +120,8 @@ fi
 # check database setting
 echo "=============================================================="
 echo "postgresql data is:"
-psql -U postgres -d ejabberd -c "select * from host_info;"
-psql -U postgres -d ejabberd -c "select host_id, user_id from host_users;"
+psql -U postgres -d ejabberd -h 127.0.0.1 -c "select * from host_info;"
+psql -U postgres -d ejabberd -h 127.0.0.1 -c "select host_id, user_id from host_users;"
 
 # check nav.json
 echo "=============================================================="
@@ -137,7 +137,7 @@ grep -A 1 "^hosts:" /startalk/ejabberd/etc/ejabberd/ejabberd.yml
 
 result=`echo " " | telnet ip 5202 2>/dev/null| grep "Connected to" | wc -l`
 if [ $result -eq 1 ];then
-      echo "ip的5202端口已开启"
+      echo "ip的5202端口已开启访问"
 else 
-      echo "ip的5202端口未开启，请开启"
+      echo "ip的5202端口未开启外网访问，请开启该端口访问或者关掉防火墙"
 fi
