@@ -112,7 +112,7 @@ result=`netstat -ntl | grep 8085`
 
 if [[ -z $result ]];
 then
-    echo "error: startalk_found port 8085 is not open; to run with startalk: cd /startalk/tomcat/qtalk_background_management; ./bin/start.sh"
+    echo "error: startalk_found port 8085 is not open; to run with startalk: cd /startalk/tomcat/qtalk_background_management; ./bin/start.sh(开源版本请忽略)"
 else
     echo "success: startalk_found port 8085 is open"
 fi
