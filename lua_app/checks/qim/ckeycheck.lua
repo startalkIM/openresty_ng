@@ -46,8 +46,6 @@ function _M:ckeyCheck()
         local params = decodedCkeyString:split("&")
         local decodedCkey = {}
 
-        ngx.log(ngx.ERR, "key1 " .. decodedCkeyString)
-
         for i=1 ,#params do
             local subparam = params[i]
             local kv = subparam:split("=")
@@ -137,12 +135,3 @@ function _M:ckeyCheck()
 end
 
 return _M
-
-
-
-
-
-
-
-
-
