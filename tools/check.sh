@@ -122,6 +122,7 @@ echo "=============================================================="
 echo "postgresql data is:"
 psql -U postgres -d ejabberd -h 127.0.0.1 -c "select * from host_info;"
 psql -U postgres -d ejabberd -h 127.0.0.1 -c "select host_id, user_id from host_users;"
+psql -U postgres -d ejabberd -h 127.0.0.1 -c "select password, pwd_salt from host_users where host_id in (select id from host_info where host = 'qtalk.test.org') and user_id = 'admin' and hire_flag = '1' and frozen_flag='0';"
 
 # check nav.json
 echo "=============================================================="
