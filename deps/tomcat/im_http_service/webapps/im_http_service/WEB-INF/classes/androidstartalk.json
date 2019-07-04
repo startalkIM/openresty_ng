@@ -39,6 +39,15 @@
       "linkurl": "",
       "title": "拍照",
       "support": 63
+    },{
+      "trdextendId": "Video",
+      "scope": 3,
+      "icon": "http://ip:8080/file/v2/download/6848b0b4a889091a84d097aa314d2b1d.png",
+      "i18NTitle": "",
+      "linkType": 0,
+      "linkurl": "",
+      "title": "视频",
+      "support": 63
     },
     {
       "trdextendId": "MyFile",
