@@ -22,4 +22,24 @@
         select id, host from host_info order by id limit 1;
     </select>
 
+    <select id="selectHostType" resultType="int">
+        select host_type from host_info where host = #{host}
+    </select>
+
+    <select id="selectHostCountByHost" resultType="int">
+        select count(1) from host_info where host = #{host}
+    </select>
+
+    <update id="updateHostQRCode">
+        update host_info set host_qrcode = #{qrCodrPath} where host = #{host}
+    </update>
+
+    <select id="selectHostQRCodePath" resultType="string">
+        select host_qrcode from host_info where host = #{host}
+    </select>
+
+    <select id="selectNeedApproveByHost" resultType="int">
+        select need_approve from host_info where host = #{host}
+    </select>
+
 </mapper>

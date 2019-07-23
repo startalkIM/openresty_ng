@@ -36,6 +36,8 @@
             <if test="mucDesc != null"> muc_desc = #{mucDesc}, </if>
             <if test="mucTitle != null"> muc_title = #{mucTitle}, </if>
             <if test="mucPic != null and mucPic != ''"> muc_pic = #{mucPic}, </if>
+            <if test="showNamePinyin != null"> show_name_pinyin = #{showNamePinyin}, </if>
+            update_time = current_timestamp,
             version = cast(muc_vcard_info.version as integer)+ 1
          </set>
          where muc_name = #{mucName}
@@ -60,12 +62,7 @@
     <insert id="insertMucInfo" parameterType="com.qunar.qchat.dao.model.MucInfoModel">
         insert into muc_vcard_info
         <trim prefix="(" suffix=")" suffixOverrides=",">
-            /* private String mucName;
-            private String showName;
-            private String mucDesc;
-            private String mucTitle;
-            private String mucPic;
-            private String version;*/
+
             <if test="mucName != null">
                 muc_name,
             </if>
@@ -80,6 +77,9 @@
             </if>
             <if test="mucPic != null">
                 muc_pic,
+            </if>
+            <if test="showNamePinyin !=null">
+                show_name_pinyin,
             </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -98,11 +98,27 @@
             <if test="mucPic != null">
                 #{mucPic},
             </if>
+            <if test="showNamePinyin != null">
+                #{showNamePinyin},
+            </if>
         </trim>
     </insert>
 
     <select id="selectByMucName" resultMap="mucIncrementInfoResultMap">
         select <include refid="column_all"/> from muc_vcard_info where muc_name = #{mucName}
+    </select>
+
+    <select id="selectMucNamesByUsername" resultType="string">
+        select muc_name || '@' || domain from user_register_mucs where username = #{userName};
+    </select>
+    <select id="selectIncrementMucVCards" resultMap="mucIncrementInfoResultMap">
+        select <include refid="column_all"/> from muc_vcard_info where 1=1
+        <if test = "ids != null and ids.size() > 0">
+            and muc_name in
+            <foreach collection="ids" separator="," item="id" open="(" close=")">#{id}</foreach>
+        </if>
+        and update_time > #{updateTime}
+
     </select>
 
 </mapper>

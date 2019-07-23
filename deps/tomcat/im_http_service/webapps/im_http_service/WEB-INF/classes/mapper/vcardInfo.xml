@@ -37,4 +37,8 @@
         limit 1
     </select>
 
+    <insert id="insertVCardVersion" parameterType="com.qunar.qchat.dao.model.VCardInfoModel">
+        insert into vcard_version (username,version,url,profile_version,host) values (#{username},#{version},#{url},#{profileVersion},#{host})
+    </insert>
+
 </mapper>

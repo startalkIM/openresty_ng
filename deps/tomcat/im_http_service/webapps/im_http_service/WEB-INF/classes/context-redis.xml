@@ -38,4 +38,20 @@
     <bean class="com.qunar.qchat.utils.RedisUtil">
         <property name="redisTemplate" ref="redisTemplateSpring"/>
     </bean>
+
+    <!--<bean id="contextSource" class="org.springframework.ldap.core.support.LdapContextSource">
+        <property name="url" value="${ldapUrl}"/>
+        <property name="base" value="${ldapBase}"/>
+        <property name="userDn" value="${ldapUser}"/>
+        <property name="password" value="${ldapPassword}"/>
+        <property name="pooled" value="true"/>
+        <property name="baseEnvironmentProperties">
+            <map>
+                <entry key="java.naming.ldap.attributes.binary" value="objectGUID"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="ldapTemplate" class="org.springframework.ldap.core.LdapTemplate">
+        <constructor-arg ref="contextSource"/>
+    </bean>-->
 </beans>

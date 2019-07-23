@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50ca6be4-5c52-438d-9972-98f86901215e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/META-INF/maven/com.qunar.qchat/im_http_service_open/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/META-INF/maven/com.qunar.qchat/im_http_service_open/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/META-INF/maven/com.qunar.qchat/im_http_service_open/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/META-INF/maven/com.qunar.qchat/im_http_service_open/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/androidqtalk.json" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/androidqtalk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/androidstartalk.json" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/androidstartalk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/constants/BaseCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/constants/BaseCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/constants/QChatConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/constants/QChatConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/controller/QBaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/controller/QBaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/controller/QDomainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/controller/QDomainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/controller/QMucInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/controller/QMucInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/IHostInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/IHostInfoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/IHostUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/IHostUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/IMucInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/IMucInfoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/IUserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/IUserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/IVCardInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/IVCardInfoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/model/HostUserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/model/HostUserModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/model/MucInfoModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/model/MucInfoModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/model/UserInfoQtalk.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/dao/model/UserInfoQtalk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/model/result/GetMucVcardResult$MucInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/model/result/GetMucVcardResult$MucInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/model/result/GetVCardInfoResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/model/result/GetVCardInfoResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/utils/DateUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/utils/Md5Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/com/qunar/qchat/utils/Md5Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/context-placeholder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/context-placeholder.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/context-redis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/context-redis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/hostInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/hostInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/hostUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/hostUser.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/mucInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/mucInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/userDep.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/userDep.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/vcardInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/mapper/vcardInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/spring_servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/im_http_service/webapps/im_http_service/WEB-INF/classes/spring_servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/META-INF/maven/com.qunar.qtalk/qfproxy_open/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/META-INF/maven/com.qunar.qtalk/qfproxy_open/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/META-INF/maven/com.qunar.qtalk/qfproxy_open/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/META-INF/maven/com.qunar.qtalk/qfproxy_open/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/DefaultEmoticon.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/constants/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/constants/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/controller/EmoDownloadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/controller/EmoDownloadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/controller/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/controller/UploadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/interceptor/CorsFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/model/DefaultEmoticonModel$FaceId$FaceIdBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/model/DefaultEmoticonModel$FaceId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/model/DefaultEmoticonModel$FaceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/model/DefaultEmoticonModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/model/EmoType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/service/DownloadService.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/service/DownloadService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/service/EmoDownloadService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/service/EmoDownloadService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/servlet/UploadV2Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/servlet/UploadV2Servlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/utils/DownloadUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/com/qunar/qfproxy/utils/DownloadUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/qfproxy.properties" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/qfproxy.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/storage.properties" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/classes/storage.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/lib/fastjson-1.2.45.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/lib/lombok-1.16.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deps/tomcat/qfproxy/webapps/qfproxy/WEB-INF/web.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="960" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Erlang External Tools" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50ca6be4-5c52-438d-9972-98f86901215e" name="Default Changelist" comment="" />
+      <created>1563871303181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563871303181</updated>
+      <workItem from="1563871305115" duration="266000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="266000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="960" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="leetcode" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Erlang 22</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Erlang 22</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
