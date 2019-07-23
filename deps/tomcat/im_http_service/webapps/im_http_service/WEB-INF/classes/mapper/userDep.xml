@@ -107,4 +107,34 @@
         where host_id=#{hostId} and user_id=#{userId};
     </select>
 
+    <insert id="insertVcardVersion">
+        insert into vcard_version
+        (
+        username,
+        host,
+        version,
+        url,
+        gender
+        )
+        VALUES (
+        #{username},
+        #{host},
+        1,
+        #{url},
+        #{gender}
+        )ON conflict(username,host) DO UPDATE
+        SET gender =#{gender},version =vcard_version.version+1;
+    </insert>
+
+    <delete id="deleteVcard">
+        DELETE from vcard_version;
+    </delete>
+
+    <delete id="deleteDep">
+        DELETE from startalk_dep_table;
+    </delete>
+
+    <select id="insertOrUpdateDep" resultType="java.lang.Integer">
+        INSERT INTO  startalk_dep_table(dep_name, dep_level, parent_id) VALUES (#{depName},#{depLevel},#{parentId}) on CONFLICT (dep_name) DO UPDATE set update_time=now()  RETURNING id;
+    </select>
 </mapper>

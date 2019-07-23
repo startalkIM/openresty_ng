@@ -19,6 +19,16 @@
 
     <import resource="context-others.xml"/>
 
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="locations">
+            <list>
+                <value>classpath*:sms.properties</value>
+            </list>
+        </property>
+        <property name="fileEncoding" value="UTF-8"/>
+    </bean>
+
     <mvc:annotation-driven>
         <mvc:message-converters>
             <bean class="org.springframework.http.converter.StringHttpMessageConverter">
@@ -26,6 +36,12 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="DefaultEncoding" value="UTF-8"/>
+        <property name="MaxUploadSize" value="1048576" />
+        <property name="MaxInMemorySize" value="4096"/>
+    </bean>
 
     <bean class="com.qunar.qchat.interceptor.MonitorHandlerExceptionResolver"/>
 
