@@ -5,7 +5,7 @@
   "baseaddess": {
     "simpleapiurl": "http://ip:8080",
     "fileurl": "http://ip:8080",
-    "domain": "qtalk.test.org",
+    "domain": "qtalk",
     "javaurl": "http://ip:8080/package",
     "protobufPcPort": 5202,
     "xmpp": "ip",
@@ -22,7 +22,7 @@
   "imConfig": {
     "RsaEncodeType": 1,
     "showOrganizational": true,
-    "mail":"qtalk.test.org",
+    "mail":"qtalk",
     "foundConfigUrl":"http://ip:8080//startalk/management/find/get/navigation"
   },
   "ability": {
