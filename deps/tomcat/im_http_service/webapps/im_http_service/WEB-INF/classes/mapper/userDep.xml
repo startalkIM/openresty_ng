@@ -81,7 +81,7 @@
     <select id="getUserLeader" resultType="java.lang.String">
         select leader from host_users where user_id=#{userId} and host_id=#{hostId};
     </select>
-    <select id="getUserHireFlag"  resultType="java.lang.Integer">
+    <select id="getUserHireFlag" resultType="java.lang.Integer">
         select hire_flag from host_users where user_id=#{userId} and host_id=#{hostId};
     </select>
 
@@ -136,5 +136,46 @@
 
     <select id="insertOrUpdateDep" resultType="java.lang.Integer">
         INSERT INTO  startalk_dep_table(dep_name, dep_level, parent_id) VALUES (#{depName},#{depLevel},#{parentId}) on CONFLICT (dep_name) DO UPDATE set update_time=now()  RETURNING id;
+    </select>
+
+    <select id="getUserPassword" resultType="com.qunar.qchat.dao.model.UserPasswordModel">
+        select password AS passwd ,
+               pwd_salt AS passwdSalt,
+               user_id AS userID,
+               host_id as host
+        from host_users where (user_id=#{param} or email=#{param} or tel=#{param} )and hire_flag=1 and frozen_flag= 0 AND host_id in (select id from host_info where host=#{host}) limit 1;
+    </select>
+
+    <select id="selectMucRoomUsersCount"
+            resultType="int">
+        SELECT
+        COUNT(*)
+        FROM
+        muc_room_users
+        WHERE
+        muc_name = #{mucName}
+        and domain = #{domain}
+        and username = #{username}
+        and host = #{host};
+
+    </select>
+
+    <select id="selectUserInfo"
+            resultType="com.qunar.qchat.model.UserInfo">
+        SELECT
+        host_users.user_id as user_id,
+        host_users.user_name as user_name,
+        host_users.gender as gender,
+        vcard_version.mood as mood,
+        vcard_version.url as url
+        FROM
+        (host_users inner join host_info on host_info.id = host_users.host_id)
+        left join vcard_version on host_info.host = vcard_version.host and vcard_version.username = host_users.user_id
+        where
+        (host_users.user_id, host_info.host) IN
+        <foreach collection="users" index="index" item="item" open="(" separator="," close=")">
+            (#{item.username}, #{item.host})
+        </foreach>
+        ;
     </select>
 </mapper>

@@ -26,15 +26,17 @@
     </select>
 
     <select id="selectByUsernameAndHost" resultMap="VCardVersionResultMap">
-        select
-            v.id, v.username,u.user_name as nickname, v.version, v.url, v.uin, v.profile_version, v.mood, v.gender, v.host
-        from vcard_version v,
-             host_users u
-        where v.username = #{username}
-          and v.host = #{host}
-          and v.version >= #{version}
-          and v.username = u.user_id
-        limit 1
+       SELECT v.id, v.username, u.user_name AS nickname, v.version, v.url
+	   , v.uin, v.profile_version, v.mood, v.gender, v.host
+        FROM host_users u
+	   LEFT JOIN host_info h ON u.host_id = h.id
+	   LEFT JOIN vcard_version v
+	   ON h.host = v.host
+	  AND u.user_id = v.username
+WHERE (v.username = #{username}
+	AND v.host = #{host}
+	AND v.version >= #{version});
+
     </select>
 
     <insert id="insertVCardVersion" parameterType="com.qunar.qchat.dao.model.VCardInfoModel">

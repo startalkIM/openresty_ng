@@ -109,13 +109,16 @@
     </select>
 
     <select id="selectMucNamesByUsername" resultType="string">
-        select muc_name || '@' || domain from user_register_mucs where username = #{userName};
+        select muc_name || '@' || domain from user_register_mucs where username = #{userName} AND registed_flag=1;
     </select>
     <select id="selectIncrementMucVCards" resultMap="mucIncrementInfoResultMap">
         select <include refid="column_all"/> from muc_vcard_info where 1=1
         <if test = "ids != null and ids.size() > 0">
             and muc_name in
             <foreach collection="ids" separator="," item="id" open="(" close=")">#{id}</foreach>
+        </if>
+        <if test = "ids == null or ids.size() == 0">
+            and 1=0
         </if>
         and update_time > #{updateTime}
 
