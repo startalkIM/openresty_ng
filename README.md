@@ -42,7 +42,7 @@ Startalk 内置了一些 or (运行 lua-jit 的) 服务，用于 IM http 请求�
 # git clone https://github.com/startalkIM/openresty_ng.git
 # cd openresty_ng
 # cp -rf conf /startalk/openresty/nginx
-# cp -rf startalk_lua_app /startalk/openresty/nginx
+# cp -rf startalk_lua /startalk/openresty/nginx
 
 ```
 
@@ -60,7 +60,7 @@ Startalk 内置了一些 or (运行 lua-jit 的) 服务，用于 IM http 请求�
 ```
 #### redis连接地址配置
 ```
-/startalk/openresty/nginx/startalk_lua_app/checks/qim/startalkredis.lua
+/startalk/openresty/nginx/startalk_lua/checks/qim/startalkredis.lua
 ```
 
 ## or操作
@@ -81,6 +81,6 @@ Startalk 内置了一些 or (运行 lua-jit 的) 服务，用于 IM http 请求�
 $ cd /startalk/download/openresty_ng
 $ git pull
 $ cp -rf conf /startalk/openresty/nginx
-$ cp -rf startalk_lua_app /startalk/openresty/nginx
+$ cp -rf startalk_lua /startalk/openresty/nginx
 $ sudo /startalk/openresty/nginx/sbin/nginx -s reload
 ```
