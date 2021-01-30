@@ -44,7 +44,7 @@ upstream的配置
 /startalk/openresty/nginx/conf/conf.d/upstreams/st.upstream.conf
 
 redis连接地址配置
-/startalk/openresty/nginx/lua_app/checks/qim/qtalkredis.lua
+/startalk/openresty/nginx/lua_app/checks/qim/startalkredis.lua
 ```
 
 ## or操作
