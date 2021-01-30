@@ -41,7 +41,7 @@ location的配置
 /startalk/openresty/nginx/conf/conf.d/subconf/or.server.location.package.qtapi.conf
 
 upstream的配置
-/startalk/openresty/nginx/conf/conf.d/upstreams/qt.qunar.com.upstream.conf
+/startalk/openresty/nginx/conf/conf.d/upstreams/st.upstream.conf
 
 redis连接地址配置
 /startalk/openresty/nginx/lua_app/checks/qim/qtalkredis.lua
