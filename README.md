@@ -74,7 +74,7 @@ ${STARTALK_OPENRESTY}/nginx/conf/conf.d/startalk/or.server.location.package.qtap
 ```
 ### upstream的配置
 ```
-${STARTALK_OPENRESTY}/nginx/conf/conf.d/startalkupstreams/st.upstream.conf
+${STARTALK_OPENRESTY}/nginx/conf/conf.d/startalkupstream/st.upstream.conf
 ```
 ### redis连接地址配置
 ```
