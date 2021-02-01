@@ -15,6 +15,7 @@ startalk 需要启动一些基于 http/https 的服务，这些服务是通过�
 
 * conf: startalk 用到的 openresty 的主要配置文件
 * startalk_lua : startalk 的 openresty 使用的一些 lua 代码，用于对请求做动态变更
+* tools：一些测试用工具
 
 # startalk or 服务
 
