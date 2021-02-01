@@ -30,7 +30,7 @@ http {
     keepalive_timeout  65;
     resolver 8.8.8.8;
 
-    include conf.d/startalkupstreams/*.conf;
+    include conf.d/startalkupstream/*.conf;
 
     server {
         listen       8080;
