@@ -11,7 +11,12 @@ startalk 需要启动一些基于 http/https 的服务，这些服务是通过�
 * 数据库用户名初始密码是 ``ejabberd:123456``，数据库服务器缺省地址是：``127.0.0.1`` 请自行修改
 * ``redis`` 初始密码是：``123456``，服务地址是：``127.0.0.1`` 请自行修改
 
-## or 服务
+# 本项目各目录说明
+
+* conf: startalk 用到的 openresty 的主要配置文件
+* startalk_lua : startalk 的 openresty 使用的一些 lua 代码，用于对请求做动态变更
+
+# startalk or 服务
 
 Startalk 内置了一些 or (运行 lua-jit 的) 服务，用于 IM http 请求负载均衡的服务，完整体系架构可参考[ejabberd](https://github.com/qunarcorp/ejabberd-open)
 
@@ -20,14 +25,14 @@ Startalk 内置了一些 or (运行 lua-jit 的) 服务，用于 IM http 请求�
 ## 新建安装目录
 
 ```
-$ sudo mkdir ${STARTALK_OPENRESTY}
+$ sudo mkdir -p ${STARTALK_OPENRESTY}
 $ sudo chown startalk:startalk ${STARTALK_OPENRESTY}
 ```
 
 ## 编译安装 openresty
 
 这一步是安装开源 openresty 软件，以 startalk 用户下载软件并且编译安装之，如果系统已有 openresty 软件包（rpm、deb等），则可以忽略这一步。
-但是要关注 openresty 的启动用户，详见 ``/usr/local/openresty/nginx/conf/nginx.conf`` 配置文件。
+但是要关注 openresty 的启动用户和缺省安装位置，大多数缺省安装包的 ``openresty`` 的配置文件在 ``/usr/local/openresty/nginx/conf/nginx.conf`` 。
 
 请注意设置下面 ``${STARTALK_OPENRESTY}`` 变量或者使用上面的缺省替换之。
 
@@ -40,7 +45,7 @@ $ make
 $ sudo make install
 ```
 
-# 安装 or 服务
+# 安装 startalk or 服务
 
 ```
 $ cd /home/startalk/download
