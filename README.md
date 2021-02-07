@@ -1,52 +1,55 @@
-# 概述
+# Overview
 
-startalk 需要启动一些基于 http/https 的服务，这些服务是通过开源软件 openresty 提供的接口支持的。本项目描述了如何安装配置 startalk 的 openresty。
+startalk needs to start some http/https based services that are supported through an interface provided by the open source software openresty. This project describes how to install and configure openresty for startalk.
 
 
-# 术语和缺省
+# Terminology and defaults
 
-* 所有 Web 相关软件都安装到 ``${STARTALK_OPENRESTY}`` 下面，缺省是 ``/startalk/openresty`` 目录。
-* 缺省安装用户和用户组是：``startalk:startalk``，可能需要系统 ``startalk`` 用户有 ``sudo`` 权限，熟悉系统的用户也可以用自己的普通用户，比如 ``nobody``
-* ``startalk`` 用户家目录下有 ``download`` 文件夹，所有源代码和配置文件会下载到该文件夹下
-* 数据库用户名初始密码是 ``ejabberd:123456``，数据库服务器缺省地址是：``127.0.0.1`` 请自行修改
-* ``redis`` 初始密码是：``123456``，服务地址是：``127.0.0.1`` 请自行修改
+* All web-related software is installed under ``${STARTALK_OPENRESTY}``, the default is the ``/startalk/openresty`` directory.
+* The default installation user and user group is: ``startalk:startalk``, which may require the system ``startalk`` user to have ``sudo`` privileges, or users familiar with the system can use their own normal user, such as ``nobody``
+* ``startalk`` user has a ``download`` folder in his home directory, all source code and configuration files will be downloaded to this folder
+* The initial password for the database user name is ``ejabberd:123456`` and the default address of the database server is ``127.0.0.1`` Please change it yourself
+* ``redis`` initial password is: ``123456``, the service address is: ``127.0.0.1`` Please change it yourself
 
-# 本项目各目录说明
+# Description of each directory in this project
 
-* conf: startalk 用到的 openresty 的主要配置文件
-* startalk_lua : startalk 的 openresty 使用的一些 lua 代码，用于对请求做动态变更
-* tools：一些测试用工具
 
-# startalk or 服务
+* conf: the main configuration file of openresty used by startalk
+* startalk_lua : some lua code used by startalk's openresty, used to make dynamic changes to requests
+* tools: some tools for testing
 
-Startalk 内置了一些 or (运行 lua-jit 的) 服务，用于 IM http 请求负载均衡的服务，完整体系架构可参考[ejabberd](https://github.com/qunarcorp/ejabberd-open)
+# startalk or services
 
-# 安装 openresty
+Startalk has some built-in or (running lua-jit) services for IM http request load balancing, see [ejabberd](https://github.com/qunarcorp/ejabberd-open) for the full architecture
 
-## 新建安装目录
+# Install openresty
+
+## Create a new installation directory
 
 ```
 $ sudo mkdir -p ${STARTALK_OPENRESTY}
 $ sudo chown startalk:startalk ${STARTALK_OPENRESTY}
 ```
 
-## 编译安装 openresty
+## Compile and install openresty
 
-这一步是安装开源 openresty 软件，以 startalk 用户下载软件并且编译安装之，如果系统已有 openresty 软件包（rpm、deb等），则可以忽略这一步。
-但是要关注 openresty 的启动用户和缺省安装位置，大多数缺省安装包的 ``openresty`` 的配置文件在 ``/usr/local/openresty/nginx/conf/nginx.conf`` 。
+This step is to install the openresty software, download the software as a startalk user and compile and install it, if the system already has openresty packages (rpm, deb, etc.), you can ignore this step.
+However, you should pay attention to openresty startup user and default installation location, most of the default installation package ``openresty`` configuration file is in ``/usr/local/openresty/nginx/conf/nginx.conf``.
 
-请注意设置下面 ``${STARTALK_OPENRESTY}`` 变量或者使用上面的缺省替换之。
+
+Please note that the following ``${STARTALK_OPENRESTY}`` variable is set or replaced with the default above.
 
 ```
 $ cd /home/startalk/download
 $ wget https://openresty.org/download/openresty-1.13.6.2.tar.gz
 $ tar -zxvf openresty-1.13.6.2.tar.gz
-$ ./configure --prefix=${STARTALK_OPENRESTY}
+$ . /configure --prefix=${STARTALK_OPENRESTY}
 $ make
 $ sudo make install
 ```
 
-# 安装 startalk or 服务
+# Install startalk or service
+
 
 ```
 $ cd /home/startalk/download
@@ -56,44 +59,44 @@ $ sudo cp -rf conf ${STARTALK_OPENRESTY}/nginx
 $ sudo cp -rf startalk_lua ${STARTALK_OPENRESTY}/nginx
 
 ```
-请注意将 ``${STARTALK_OPENRESTY}/nginx/conf/startalk-nginx.conf-sample`` 的内容修改到 ``${STARTALK_OPENRESTY}/nginx/conf/nginx.conf`` 中，
-如果是彻底偷懒的话则用本项目的 ``conf/startalk-nginx.conf-sample`` 文件覆盖 ``${STARTALK_OPENRESTY}/nginx/conf/nginx.conf``：
+Please note that the contents of ``${STARTALK_OPENRESTY}/nginx/conf/startalk-nginx.conf-sample`` are modified to ``${STARTALK_OPENRESTY}/nginx/conf/nginx.conf``.
+If you are completely lazy, overwrite ``${STARTALK_OPENRESTY}/nginx/conf/nginx.conf`` with the project's ``conf/startalk-nginx.conf-sample`` file.
 
 ```
 $ sudo cp -rf conf/startalk-nginx.conf-sample ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf
 ```
-请注意执行上面这条命令之前，你必须知道自己在干什么。
+Please note that you must know what you are doing before you execute this command above.
 
-# 配置 Openresty
+## Configure Openresty
 
-## or 服务配置修改
+## or service configuration changes
 
-### location的配置
+### configuration of location
 ```
 ${STARTALK_OPENRESTY}/nginx/conf/conf.d/startalk/or.server.location.package.qtapi.conf
 ```
-### upstream的配置
+### upstream configuration
 ```
 ${STARTALK_OPENRESTY}/nginx/conf/conf.d/startalkupstream/st.upstream.conf
 ```
-### redis连接地址配置
+### redis connection address configuration
 ```
 ${STARTALK_OPENRESTY}/nginx/startalk_lua/checks/qim/startalkredis.lua
 ```
 
-## or操作
+## or operations
 
-启动：
+Start.
 ```
 ${STARTALK_OPENRESTY}/nginx/sbin/nginx
 ```
-停止：
+Stop.
 
 ```
 ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
 ```
 
-## or升级
+## or upgrade
 
 ```
 $ cd /startalk/download/openresty_ng
