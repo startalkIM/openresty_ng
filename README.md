@@ -13,6 +13,7 @@ startalk needs to start some http/https based services that are supported throug
 
 # Description of each directory in this project
 
+
 * conf: the main configuration file of openresty used by startalk
 * startalk_lua : some lua code used by startalk's openresty, used to make dynamic changes to requests
 * tools: some tools for testing
@@ -35,6 +36,7 @@ $ sudo chown startalk:startalk ${STARTALK_OPENRESTY}
 This step is to install the openresty software, download the software as a startalk user and compile and install it, if the system already has openresty packages (rpm, deb, etc.), you can ignore this step.
 However, you should pay attention to openresty startup user and default installation location, most of the default installation package ``openresty`` configuration file is in ``/usr/local/openresty/nginx/conf/nginx.conf``.
 
+
 Please note that the following ``${STARTALK_OPENRESTY}`` variable is set or replaced with the default above.
 
 ```
@@ -47,6 +49,7 @@ $ sudo make install
 ```
 
 # Install startalk or service
+
 
 ```
 $ cd /home/startalk/download
