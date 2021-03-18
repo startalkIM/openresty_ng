@@ -1,6 +1,4 @@
-#
-# Change ${STARTALK_OPENRESTY} to your openresty installation path!
-#
+
 #user  nobody;
 #user  nginx;
 user startalk;
@@ -42,6 +40,11 @@ http {
         more_clear_headers 'Server';
         more_clear_headers 'X-Powered-By';
         client_max_body_size 10m;
+        #
+        # Change ${STARTALK_OPENRESTY} to your openresty installation path!
+        #
+        set $STARTALK_OPENRESTY '/usr/local/openresty';
+
     
         set $template_root ${STARTALK_OPENRESTY}/nginx/startalk_lua;
     
@@ -69,7 +72,6 @@ http {
         more_clear_headers 'Server';
         more_clear_headers 'X-Powered-By';
         client_max_body_size 10m;
-    
         set $template_root ${STARTALK_OPENRESTY}/nginx/startalk_lua;
     
         location /update_version {
