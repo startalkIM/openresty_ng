@@ -1,6 +1,8 @@
 #
 # Change ${STARTALK_OPENRESTY} to your openresty installation path!
 #
+set $STARTALK_OPENRESTY '/usr/local/openresty';
+
 #user  nobody;
 #user  nginx;
 user startalk;
