@@ -5,7 +5,7 @@ startalk needs to start some http/https based services that are supported throug
 
 # Terminology and defaults
 
-* All web-related software is installed under ``${STARTALK_OPENRESTY}``, the default is the ``/startalk/openresty`` directory.
+* All web-related software is installed under ``${STARTALK_OPENRESTY}``, the default is the ``/usr/local/openresty`` directory.
 * The default installation user and user group is: ``startalk:startalk``, which may require the system ``startalk`` user to have ``sudo`` privileges, or users familiar with the system can use their own normal user, such as ``nobody``
 * ``startalk`` user has a ``download`` folder in his home directory, all source code and configuration files will be downloaded to this folder
 * The initial password for the database user name is ``ejabberd:123456`` and the default address of the database server is ``127.0.0.1`` Please change it yourself
@@ -20,9 +20,14 @@ startalk needs to start some http/https based services that are supported throug
 
 # startalk or services
 
-Startalk has some built-in or (running lua-jit) services for IM http request load balancing, see [ejabberd](https://github.com/qunarcorp/ejabberd-open) for the full architecture
+Startalk has some built-in or (running lua-jit) services for IM http request load balancing, see [ejabberd](https://github.com/startalkIM/ejabberd) for the full architecture
 
-# Install openresty
+# Install openresty  
+
+## Set Openresty location, take /usr/local/openresty as example
+```
+$ export STARTALK_OPENRESTY=/usr/local/openresty
+```
 
 ## Create a new installation directory
 
