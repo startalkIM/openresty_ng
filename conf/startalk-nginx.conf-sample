@@ -1,3 +1,4 @@
+
 #user  nobody;
 #user  nginx;
 user startalk;
@@ -11,7 +12,7 @@ events {
 }
 
 http {
-    lua_package_path '/startalk/openresty/nginx/startalk_lua/?.lua;;';
+    lua_package_path '${STARTALK_OPENRESTY}/nginx/startalk_lua/?.lua;;';
 
     include       mime.types;
     default_type  text/html;
@@ -30,7 +31,7 @@ http {
     keepalive_timeout  65;
     resolver 8.8.8.8;
 
-    include conf.d/startalkupstreams/*.conf;
+    include conf.d/startalkupstream/*.conf;
 
     server {
         listen       8080;
@@ -39,8 +40,13 @@ http {
         more_clear_headers 'Server';
         more_clear_headers 'X-Powered-By';
         client_max_body_size 10m;
+        #
+        # Change ${STARTALK_OPENRESTY} to your openresty installation path!
+        #
+        set $STARTALK_OPENRESTY '/usr/local/openresty';
+
     
-        set $template_root /startalk/openresty/nginx/startalk_lua;
+        set $template_root ${STARTALK_OPENRESTY}/nginx/startalk_lua;
     
         location /status {
             default_type text/plain;
@@ -55,7 +61,7 @@ http {
     
         error_page   500 502 503 504  /50x.html;
             location = /50x.html {
-            root   /startalk/openresty/nginx/html;
+            root   ${STARTALK_OPENRESTY}/nginx/html;
         }
     }
 
@@ -66,8 +72,7 @@ http {
         more_clear_headers 'Server';
         more_clear_headers 'X-Powered-By';
         client_max_body_size 10m;
-    
-        set $template_root /startalk/openresty/nginx/startalk_lua;
+        set $template_root ${STARTALK_OPENRESTY}/nginx/startalk_lua;
     
         location /update_version {
             more_set_headers "content-type: application/json;charset=UTF-8";
@@ -111,7 +116,7 @@ http {
         }
         error_page   500 502 503 504  /50x.html;
             location = /50x.html {
-            root   /startalk/openresty/nginx/html;
+            root   ${STARTALK_OPENRESTY}/nginx/html;
         }
     }
     
