@@ -32,7 +32,7 @@ $ export STARTALK_OPENRESTY=/usr/local/openresty
 ## Create a new installation directory
 
 ```
-$ sudo mkdir -p ${STARTALK_OPENRESTY}
+$ mkdir -p ${STARTALK_OPENRESTY}
 ```
 
 ## Compile and install openresty

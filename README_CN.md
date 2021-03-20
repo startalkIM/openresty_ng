@@ -32,8 +32,7 @@ $ export STARTALK_OPENRESTY=/usr/local/openresty
 ## 新建安装目录
 
 ```
-$ sudo mkdir -p ${STARTALK_OPENRESTY}
-$ sudo chown startalk:startalk ${STARTALK_OPENRESTY}
+$ mkdir -p ${STARTALK_OPENRESTY}
 ```
 
 ## 编译安装 openresty
@@ -91,12 +90,12 @@ ${STARTALK_OPENRESTY}/nginx/startalk_lua/checks/qim/startalkredis.lua
 
 启动：
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx
+sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx
 ```
 停止：
 
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
+sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
 ```
 
 ## or升级
@@ -104,7 +103,7 @@ ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
 ```
 $ cd /startalk/download/openresty_ng
 $ git pull
-$ sudo cp -rf conf /startalk/openresty/nginx
-$ sudo cp -rf startalk_lua /startalk/openresty/nginx
-$ sudo /startalk/openresty/nginx/sbin/nginx -s reload
+$ sudo cp -rf conf ${STARTALK_OPENRESTY}/nginx
+$ sudo cp -rf startalk_lua ${STARTALK_OPENRESTY}/nginx
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s reload
 ```
