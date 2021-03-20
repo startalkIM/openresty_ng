@@ -33,7 +33,6 @@ $ export STARTALK_OPENRESTY=/usr/local/openresty
 
 ```
 $ sudo mkdir -p ${STARTALK_OPENRESTY}
-$ sudo chown startalk:startalk ${STARTALK_OPENRESTY}
 ```
 
 ## Compile and install openresty
@@ -93,12 +92,12 @@ ${STARTALK_OPENRESTY}/nginx/startalk_lua/checks/qim/startalkredis.lua
 
 Start.
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx
+sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx
 ```
 Stop.
 
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
+sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
 ```
 
 ## or upgrade
@@ -106,7 +105,7 @@ ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
 ```
 $ cd /startalk/download/openresty_ng
 $ git pull
-$ sudo cp -rf conf /startalk/openresty/nginx
-$ sudo cp -rf startalk_lua /startalk/openresty/nginx
-$ sudo /startalk/openresty/nginx/sbin/nginx -s reload
+$ sudo cp -rf conf ${STARTALK_OPENRESTY}/nginx
+$ sudo cp -rf startalk_lua ${STARTALK_OPENRESTY}/nginx
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s reload
 ```
