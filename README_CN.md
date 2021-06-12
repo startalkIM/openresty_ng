@@ -39,6 +39,7 @@ $ mkdir -p ${STARTALK_OPENRESTY}
 
 这一步是安装开源 openresty 软件，以 startalk 用户下载软件并且编译安装之，如果系统已有 openresty 软件包（rpm、deb等），则可以忽略这一步。
 但是要关注 openresty 的启动用户和缺省安装位置，大多数缺省安装包的 ``openresty`` 的配置文件在 ``/usr/local/openresty/nginx/conf/nginx.conf`` 。
+我们强烈建议使用 [OpenResty 官方网站](https://openresty.org) 上的预编译包安装 ``openresty``，而不要选择手工编译，如果您已经用预编译包安装好了 ``openresty``，请忽略本节剩下的内容。
 
 请注意设置下面 ``${STARTALK_OPENRESTY}`` 变量或者使用上面的缺省替换之。
 
@@ -88,15 +89,24 @@ ${STARTALK_OPENRESTY}/nginx/startalk_lua/checks/qim/startalkredis.lua
 
 ## or操作
 
+请注意我们使用了  `-p` 参数与 `nginx.conf.sample` 内的 `lua_package_path` 配合。
+
 启动：
 ```
-sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx
+${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf
 ```
+
 停止：
 
 ```
-sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
+${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s stop
 ```
+重载配置：
+
+```
+${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s reload
+```
+
 
 ## or升级
 

@@ -38,10 +38,12 @@ $ mkdir -p ${STARTALK_OPENRESTY}
 ## Compile and install openresty
 
 This step is to install the openresty software, download the software as a startalk user and compile and install it, if the system already has openresty packages (rpm, deb, etc.), you can ignore this step.
+
 However, you should pay attention to openresty startup user and default installation location, most of the default installation package ``openresty`` configuration file is in ``/usr/local/openresty/nginx/conf/nginx.conf``.
 
 
 Please note that the following ``${STARTALK_OPENRESTY}`` variable is set or replaced with the default above.
+Do not build your own openresty if you are no familiare with Linux and/or open source software. We strongly recommend to use prebuild openresty package on [OpenResty Web Site](https://openresty.org) instead. Please omit the rest info in this section if you've installed openresty via prebuild package.
 
 ```
 $ cd /home/startalk/download
@@ -90,14 +92,16 @@ ${STARTALK_OPENRESTY}/nginx/startalk_lua/checks/qim/startalkredis.lua
 
 ## or operations
 
+Be careful we use `-p` parameter to coordinate with `lua_package_path` in `nginx.conf.sample`.
+
 Start.
 ```
-sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx
+${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf
 ```
 Stop.
 
 ```
-sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
+${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s stop
 ```
 
 ## or upgrade
