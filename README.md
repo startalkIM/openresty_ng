@@ -44,7 +44,7 @@ However, you should pay attention to openresty startup user and default installa
 
 
 Please note that the following ``${STARTALK_OPENRESTY}`` variable is set or replaced with the default above.
-Do not build your own openresty if you are no familiare with Linux and/or open source software. We strongly recommend to use prebuild openresty package on [OpenResty Web Site](https://openresty.org) instead. Omit below if you've installed openresty via prebuild package.
+Do not build your own openresty if you are no familiare with Linux and/or open source software. We strongly recommend to use prebuild openresty package on [OpenResty Web Site](https://openresty.org) instead. Please omit the rest info in this section if you've installed openresty via prebuild package.
 
 ```
 $ cd /home/startalk/download
