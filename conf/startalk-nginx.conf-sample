@@ -15,6 +15,7 @@ http {
 #
 # we use $prefix to specify the startalk_lua/*.lua source location, so please use
 # nginx -p /upper path/to/your/startalk_lua -c /nginx/config/path to start openresty
+# or replace below $prefix with your absolute path of startalk_lua subdirectory
 #
     lua_package_path '$prefix/startalk_lua/?.lua;;';
 
