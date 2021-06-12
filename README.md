@@ -32,8 +32,7 @@ $ export STARTALK_OPENRESTY=/usr/local/openresty
 ## Create a new installation directory
 
 ```
-$ sudo mkdir -p ${STARTALK_OPENRESTY}
-$ sudo chown startalk:startalk ${STARTALK_OPENRESTY}
+$ mkdir -p ${STARTALK_OPENRESTY}
 ```
 
 ## Compile and install openresty
@@ -110,7 +109,7 @@ ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${START
 ```
 $ cd /startalk/download/openresty_ng
 $ git pull
-$ sudo cp -rf conf /startalk/openresty/nginx
-$ sudo cp -rf startalk_lua /startalk/openresty/nginx
-$ sudo /startalk/openresty/nginx/sbin/nginx -s reload
+$ sudo cp -rf conf ${STARTALK_OPENRESTY}/nginx
+$ sudo cp -rf startalk_lua ${STARTALK_OPENRESTY}/nginx
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s reload
 ```
