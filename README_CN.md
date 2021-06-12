@@ -90,15 +90,24 @@ ${STARTALK_OPENRESTY}/nginx/startalk_lua/checks/qim/startalkredis.lua
 
 ## or操作
 
+请注意我们使用了  `-p` 参数与 `nginx.conf.sample` 内的 `lua_package_path` 配合。
+
 启动：
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx
+${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf
 ```
+
 停止：
 
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
+${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s stop
 ```
+重载配置：
+
+```
+${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s reload
+```
+
 
 ## or升级
 
