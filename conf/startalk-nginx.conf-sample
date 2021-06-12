@@ -12,7 +12,11 @@ events {
 }
 
 http {
-    lua_package_path '${STARTALK_OPENRESTY}/nginx/startalk_lua/?.lua;;';
+#
+# we use $prefix to specify the startalk_lua/*.lua source location, so please use
+# nginx -p /upper path/to/your/startalk_lua -c /nginx/config/path to start openresty
+#
+    lua_package_path '$prefix/startalk_lua/?.lua;;';
 
     include       mime.types;
     default_type  text/html;
