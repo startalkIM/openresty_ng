@@ -93,14 +93,16 @@ ${STARTALK_OPENRESTY}/nginx/startalk_lua/checks/qim/startalkredis.lua
 
 ## or operations
 
+Be careful we use `-p` parameter to coordinate with `lua_package_path` in `nginx.conf.sample`.
+
 Start.
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx
+${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf
 ```
 Stop.
 
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx -s stop
+${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s stop
 ```
 
 ## or upgrade
