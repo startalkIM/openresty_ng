@@ -32,7 +32,8 @@ $ export STARTALK_OPENRESTY=/usr/local/openresty
 ## 新建安装目录
 
 ```
-$ mkdir -p ${STARTALK_OPENRESTY}
+$ sudo mkdir -p ${STARTALK_OPENRESTY}
+$ sudo chown startalk:startalk ${STARTALK_OPENRESTY}
 ```
 
 ## 编译安装 openresty
