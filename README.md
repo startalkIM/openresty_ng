@@ -113,4 +113,10 @@ $ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c 
 
 ## or upgrade
 
-Please follow your prebuilded openresty package upgrade instructions.
+```
+$ cd openresty_ng
+$ git pull
+$ sudo cp -rf conf ${STARTALK_OPENRESTY}/nginx
+$ sudo cp -rf startalk_lua ${STARTALK_OPENRESTY}/nginx
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s reload
+```

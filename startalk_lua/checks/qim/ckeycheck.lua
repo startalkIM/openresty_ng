@@ -63,7 +63,7 @@ function _M:ckeyCheck()
             return _CheckRet
         end
 
-        local config = require("checks.qim.qtalkredis")
+        local config = require("checks.qim.startalkredis")
         local user = decodedCkey["u"]
         local t    = decodedCkey["t"]
         local key  = decodedCkey["k"]

@@ -110,4 +110,11 @@ $ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c 
 
 ## or升级
 
-请参考预编译 openresty 包的升级指导。
+```
+$ cd openresty_ng
+$ git pull
+$ sudo cp -rf conf ${STARTALK_OPENRESTY}/nginx
+$ sudo cp -rf startalk_lua ${STARTALK_OPENRESTY}/nginx
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s reload
+```
+
