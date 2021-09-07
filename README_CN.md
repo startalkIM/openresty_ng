@@ -33,7 +33,6 @@ $ export STARTALK_OPENRESTY=/usr/local/openresty
 
 ```
 $ sudo mkdir -p ${STARTALK_OPENRESTY}
-$ sudo chown startalk:startalk ${STARTALK_OPENRESTY}
 ```
 
 ## 编译安装 openresty
@@ -94,27 +93,28 @@ ${STARTALK_OPENRESTY}/nginx/startalk_lua/checks/qim/startalkredis.lua
 
 启动：
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf
 ```
 
 停止：
 
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s stop
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s stop
 ```
 重载配置：
 
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s reload
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s reload
 ```
 
 
 ## or升级
 
 ```
-$ cd /startalk/download/openresty_ng
+$ cd openresty_ng
 $ git pull
 $ sudo cp -rf conf ${STARTALK_OPENRESTY}/nginx
 $ sudo cp -rf startalk_lua ${STARTALK_OPENRESTY}/nginx
-$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s reload
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s reload
 ```
+

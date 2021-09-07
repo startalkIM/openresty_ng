@@ -33,7 +33,6 @@ $ export STARTALK_OPENRESTY=/usr/local/openresty
 
 ```
 $ sudo mkdir -p ${STARTALK_OPENRESTY}
-$ sudo chown startalk:startalk ${STARTALK_OPENRESTY}
 ```
 
 ## Compile and install openresty
@@ -95,22 +94,29 @@ ${STARTALK_OPENRESTY}/nginx/startalk_lua/checks/qim/startalkredis.lua
 
 Be careful we use `-p` parameter to coordinate with `lua_package_path` in `nginx.conf.sample`.
 
-Start.
+Start:
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf
 ```
-Stop.
+Stop:
 
 ```
-${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s stop
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s stop
 ```
+
+reload:
+
+```
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s reload
+```
+
 
 ## or upgrade
 
 ```
-$ cd /startalk/download/openresty_ng
+$ cd openresty_ng
 $ git pull
 $ sudo cp -rf conf ${STARTALK_OPENRESTY}/nginx
 $ sudo cp -rf startalk_lua ${STARTALK_OPENRESTY}/nginx
-$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -s reload
+$ sudo ${STARTALK_OPENRESTY}/nginx/sbin/nginx -p ${STARTALK_OPENRESTY}/nginx -c ${STARTALK_OPENRESTY}/nginx/conf/nginx.conf -s reload
 ```
