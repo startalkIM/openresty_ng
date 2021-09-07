@@ -84,7 +84,7 @@ http {
             content_by_lua '
                 local ver = ngx.var.arg_version
 
-                local config = require("checks.qim.qtalkredis")
+                local config = require("checks.qim.startalkredis")
                 local redis = require "resty.redis"
                 local red = redis:new()
                 red:set_timeout(500)
